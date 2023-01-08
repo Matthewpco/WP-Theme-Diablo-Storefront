@@ -42,5 +42,4 @@
 
 	</header><!-- #header -->
 
-		<?php
-
+		<?php	
