@@ -26,4 +26,3 @@ The blank child theme itself has no functionality and if you would like to learn
 
 * [WordPress Child Themes](https://codex.wordpress.org/Child_Themes)
 
-*test*
