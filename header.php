@@ -18,30 +18,24 @@
 <?php wp_head(); ?>
 </head><!-- #head -->
 
-<body <?php body_class(); ?>>
+<body>
 
 <?php wp_body_open(); ?>
 
-<div id="header" class="">
+<div id="page-container" class="">
 
 	<header id="diablo-4-header">
 	
-		<nav id="diablo-4-nav" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Navigation', 'storefront' ); ?>">
-			<?php storefront_site_title_or_logo(); ?> 
+		<nav id="diablo-4-nav" class="main-nav" role="navigation" aria-label="<?php esc_attr_e( 'Primary Navigation', 'storefront' ); ?>">
 			<?php
 			wp_nav_menu(
 				array(
 					'theme_location'  => 'primary',
-					'container_class' => 'primary-navigation',
+					'container_class' => 'primary-nav',
 				)
 			);
 
-			wp_nav_menu(
-				array(
-					'theme_location'  => 'handheld',
-					'container_class' => 'handheld-navigation',
-				)
-			);
+			
 			?>
 		</nav><!-- #site-navigation -->
 		TODO Matthew feature: D4S-1 <a href="https://www.notion.so/D4S-1-0e246a3d483e4e2fb9c89181ad5d7cb3">>Notion task link<</a>
