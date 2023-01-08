@@ -14,12 +14,15 @@
 
 get_header(); ?>
 
-	<div id="diablo-4-front-page" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-			TODO feature: D4S-3 <a href="https://www.notion.so/D4S-3-937806c6a817452b85926aa9e75277c4">>Notion task link<</a>
-
+	<div id="d4s-front-page" class="">
+		<main id="d4s-main" role="main">
+			<h2>
+				TODO feature: D4S-3 <a href="https://www.notion.so/D4S-3-937806c6a817452b85926aa9e75277c4">>Notion task link<</a>
+			</h2>
 		</main><!-- #main -->
 	</div><!-- #front-page -->
+	<div class="page-spacer">
+		
+	</div>
 <?php
 get_footer();

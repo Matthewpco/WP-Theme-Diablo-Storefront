@@ -22,19 +22,79 @@ Images License: GNU General Public License v2 or later
 /*
  * Add your own custom css below this text.
  */
+/* =Reset
+-------------------------------------------------------------- */
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: 0;
+	list-style: none;
+}
+
+/* Header and Nav styles */
 
 #diablo-4-header {
-	background-color: #000;
+	background-color: rgba(0,0,0,0);
 	padding: 1%;
+	position: sticky;
+	top: 20px;
+	margin-top: -10%;
 }
 
 #diablo-4-nav {
 	background-color: #1D1E1E;
-	padding: 1%;
 	border-radius: 8px;
 	display: flex;
+	align-items: center;
 }
 
 #diablo-4-nav ul li a {
 	color: #fff;
 }
+#diablo-4-nav .primary-nav {
+	width: 100%;
+}
+
+#diablo-4-nav .primary-nav ul {
+	display: flex;
+}
+
+#diablo-4-nav .primary-nav ul li {
+	width: 6%;
+	font-size: 1.2rem;
+	align-self: center;
+}
+#diablo-4-nav .primary-nav ul li:nth-child(1) {
+	background-color: #141515;
+	padding: 12px;
+}
+
+#diablo-4-nav .primary-nav ul li:nth-child(9) {
+	margin-left: 35%;
+}
+
+/* Front-page styles */
+#d4s-front-page {
+	background-color: #000;
+	min-height: 1200px;
+}
+#d4s-front-page h2 {
+	color: #fff;
+	padding-top: 10%;
+}
+.page-spacer {
+	background-color: #232323;
+	min-height: 1400px;
+}
+
+/* Mobile and tablet media queries */
