@@ -98,3 +98,113 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 
 /* Mobile and tablet media queries */
+
+/* Front-page styles */
+#d4s-front-page {
+	background-color: #000;
+	min-height: 1200px;
+}
+#d4s-front-page h2 {
+	color: #fff;
+	padding-top: 10%;
+}
+.page-spacer {
+	background-color: #232323;
+	min-height: 1400px;
+}
+
+
+/* Footer styles */
+
+footer .container{
+	padding: 2rem 0 .5rem;
+}
+.footer-logo{
+	display:flex;
+	justify-content: center;
+	margin: 0  0 -1rem;
+}
+
+.footer-nav{
+	margin: 2rem 0;
+	text-decoration: none;
+
+}
+
+.footer-nav a{
+	color: #b0afab;
+}
+
+.all-games{
+	margin: 2rem 0;
+}
+
+.all-games a{
+	color: #009dff;
+}
+
+.all-games p a:hover{
+	color: #00b5ff;
+}
+
+.copyright p{
+	margin: 1.5rem 0 .5rem;
+	font-weight: lighter;
+	font-size: .5rem;
+}
+
+.copyright span{
+	font-weight: bold;
+}
+
+footer p{
+	font-size: 1rem;
+}
+
+h6{
+	margin-top: .5rem;
+	
+	text-decoration: none;
+}
+
+h6 a{
+	color: #B0AFAB;
+	margin: 0 .5rem;
+}
+
+h5 a{
+	margin: 0 .5rem;
+}
+
+footer a:hover{
+	color: #fff;
+}
+
+footer .legal-container{
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;	
+	margin-top: .6rem;
+}
+
+.footer-legal li{
+	font-size: .7rem;
+    line-height: .9rem;
+	text-align: left;
+}
+
+#esrb-policy{
+	display: block;
+    max-height: 97px;
+	margin-right: .5rem;
+	border-radius: 0;
+}
+
+#esrb-mature{
+	display: block;
+    max-height: 97px;
+	margin-right: .5rem;
+}
+
+/* Footer Mobile & Tablet media queries */
