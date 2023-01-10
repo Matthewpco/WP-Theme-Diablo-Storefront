@@ -9,8 +9,13 @@
 
 ?>
 
+
+<!--	<div class="">
+			TODO Reese feature: D4S-2 <a href="https://www.notion.so/D4S-2-1d546517eefb49afaf8ab4ad8ac1c5de">Notion task link</a>
+	</div>	
+-->
 <!-- Footer content begin -->
-	<footer id="main-footer"  role="contentinfo">	
+	<footer id="main-footer"  role="contentinfo">
 		<div class="container" style="text-align: center; background: #000; color: #B0AFAB;">
 
 			<!-- Footer logo -->							
@@ -28,7 +33,7 @@
 			</div>
 
 			<div class="copyright">
-				<p>&copy <script>document.write( new Date().getFullYear() );</script> BLIZZARD ENTERTAINMENT, INC. ALL RIGHTS RESERVED.<br>All <span>trademarks</span> referenced herin are the properties of thier respective owners.<br><span>Do not sell or share my personal information</span></p>
+				<p>&copy 20223 BLIZZARD ENTERTAINMENT, INC. ALL RIGHTS RESERVED.<br>All <span>trademarks</span> referenced herin are the properties of thier respective owners.<br><span>Do not sell or share my personal information</span></p>
 				
 				<h6 style="color: #B0AFAB;"><a href="">PRIVACY</a> | <a href="">LEGAL</a> | <a href="">TERMS</a> | <a href="">COOKIE POLICY</a> | <a href="">COOKIE SETTINGS</a></h6>
 			</div>
@@ -36,8 +41,8 @@
 			<!-- images and text should be inline block-->
 			<div class="footer-legal">
 				<div class="legal-container">
-					<img id="esrb-policy" src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/esrb.webp" alt="esrb-policy">
-					<img id="esrb-mature" src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/m.1BK7T.webp" alt="ESRB-mature">
+					<img id="esrb-policy" src="/wp-content/uploads/2023/01/esrb.webp" alt="esrb-policy">
+					<img id="esrb-mature" src="/wp-content/uploads/2023/01/m.1BK7T.webp" alt="ESRB-mature">
 					<ul style="list-style: none;">
 						<li>Blood and Gore</li>
 						<li>Intense Violence</li>
@@ -45,10 +50,8 @@
 					</ul>
 				</div>
 			</div>
-		</div>
-<div class="" style="background-color: #232323; padding-left: 1%;">
-TODO Reese feature: D4S-2 <a href="https://www.notion.so/D4S-2-1d546517eefb49afaf8ab4ad8ac1c5de">Notion task link</a>
-</div>
+			
+		<div>
 	</footer>
 <!-- #footer -->
 <!-- #full-page -->
@@ -57,7 +60,3 @@ TODO Reese feature: D4S-2 <a href="https://www.notion.so/D4S-2-1d546517eefb49afa
 
 </body>
 </html>
-
-
-
-

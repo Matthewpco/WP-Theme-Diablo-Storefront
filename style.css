@@ -150,29 +150,30 @@ footer .container{
 .copyright p{
 	margin: 1.5rem 0 .5rem;
 	font-weight: lighter;
-	font-size: .5rem;
+	font-size: .8rem;
 }
 
 .copyright span{
 	font-weight: bold;
+	font-size: .8rem;
 }
 
 footer p{
 	font-size: 1rem;
 }
 
-h6{
+footer h6{
 	margin-top: .5rem;
 	
 	text-decoration: none;
 }
 
-h6 a{
+footer h6 a{
 	color: #B0AFAB;
 	margin: 0 .5rem;
 }
 
-h5 a{
+footer h5 a{
 	margin: 0 .5rem;
 }
 
