@@ -180,32 +180,32 @@ footer a{
 	margin: 0 .5rem;
 }
 
-.h5-ul{
+.upper-nav-ul{
 	display:flex;
 	justify-content: center;
 	color: #B0AFAB;
 	margin: 1.9rem 0;
 }
 
-h5 li{
+.upper-nav-ul li{
 	font-size: 1rem;
 }
-h5 li a{
+.upper-nav-ul li a{
 	font-weight: 500;
 }
 
-.h6-ul{
+.lower-nav-ul{
 	display:flex;
 	justify-content: center;
 	color: #B0AFAB;
 	margin-bottom: 1.6rem;
 }
 
-h6 li{
+.lower-nav-ul li{
 	font-size: .7rem;
 }
 
-h6 li a{
+.lower-nav-ul li a{
 	font-weight: 500;
 }
 
