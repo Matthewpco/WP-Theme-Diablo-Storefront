@@ -114,7 +114,27 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 
 
+/* Front-page styles */
+#d4s-front-page {
+	background-color: #000;
+	min-height: 1200px;
+}
+#d4s-front-page h2 {
+	color: #fff;
+	padding-top: 10%;
+}
+.page-spacer {
+	background-color: #232323;
+	min-height: 1400px;
+}
+
+
 /* Footer styles */
+
+.todo{
+	background-color: #232323; 
+	padding-left: 1%;
+}
 
 footer .container{
 	padding: 2rem 0 .5rem;
@@ -123,12 +143,6 @@ footer .container{
 	display:flex;
 	justify-content: center;
 	margin: 0  0 -1rem;
-}
-
-.footer-nav{
-	margin: 2rem 0;
-	text-decoration: none;
-
 }
 
 .footer-nav a{
@@ -148,44 +162,61 @@ footer .container{
 }
 
 .copyright p{
-	margin: 1.5rem 0 .5rem;
+	margin: 1.5rem 0 .4rem;
 	font-weight: lighter;
-	font-size: .8rem;
+	font-size: .5rem;
 }
 
 .copyright span{
 	font-weight: bold;
-	font-size: .8rem;
 }
 
 footer p{
 	font-size: 1rem;
 }
 
-footer h6{
-	margin-top: .5rem;
-	
-	text-decoration: none;
-}
-
-footer h6 a{
+footer a{
 	color: #B0AFAB;
 	margin: 0 .5rem;
 }
 
-footer h5 a{
-	margin: 0 .5rem;
+.h5-ul{
+	display:flex;
+	justify-content: center;
+	color: #B0AFAB;
+	margin: 1.9rem 0;
+}
+
+h5 li{
+	font-size: 1rem;
+}
+h5 li a{
+	font-weight: 500;
+}
+
+.h6-ul{
+	display:flex;
+	justify-content: center;
+	color: #B0AFAB;
+	margin-bottom: 1.6rem;
+}
+
+h6 li{
+	font-size: .7rem;
+}
+
+h6 li a{
+	font-weight: 500;
 }
 
 footer a:hover{
 	color: #fff;
 }
 
-footer .legal-container{
+.legal-container{
 	display: flex;
-    flex-direction: row;
+    display: flex;
     justify-content: center;
-    align-items: flex-start;	
 	margin-top: .6rem;
 }
 
