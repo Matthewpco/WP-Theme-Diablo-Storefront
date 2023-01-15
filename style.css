@@ -33,11 +33,11 @@ Images License: GNU General Public License v2 or later
  fieldset, form, label, legend,
  table, caption, tbody, tfoot, thead, tr, th, td {
  
-	 padding: 0;
-	 margin: 0;
-	 border: 0;
-	 outline: 0;
-	 list-style: none;
+   padding: 0;
+   margin: 0;
+   border: 0;
+   outline: 0;
+   list-style: none;
  }
  
  /* Header and Nav styles  */
@@ -142,25 +142,25 @@ Images License: GNU General Public License v2 or later
  /* Add Animation */
  @-webkit-keyframes animateleft {
    from {
-	 left: -50%;
-	 opacity: 0;
+     left: -50%;
+     opacity: 0;
    }
  
    to {
-	 left: 0;
-	 opacity: 1;
+     left: 0;
+     opacity: 1;
    }
  }
  
  @keyframes animateleft {
    from {
-	 left: -50%;
-	 opacity: 0;
+     left: -50%;
+     opacity: 0;
    }
  
    to {
-	 left: 0;
-	 opacity: 1;
+     left: 0;
+     opacity: 1;
    }
  }
  
@@ -371,38 +371,38 @@ Images License: GNU General Public License v2 or later
    /* Tablet & Mobile header styles */
  
    #diablo-4-header {
-	 margin-top: -15%;
+     margin-top: -15%;
    }
  
    .mobile-icon {
-	 display: flex;
-	 color: #fff;
-	 font-size: 1.2rem;
-	 margin-right: 2%;
+     display: flex;
+     color: #fff;
+     font-size: 1.2rem;
+     margin-right: 2%;
    }
  
    .main-nav a.icon {
-	 display: block;
+     display: block;
    }
  
    .main-nav ul li {
-	 display: none;
+     display: none;
    }
  
    .main-nav ul li:first-child {
-	 display: flex;
-	 flex: 45%;
+     display: flex;
+     flex: 45%;
    }
  
    .main-nav ul li:nth-child(3) {
-	 display: flex;
-	 flex: 50%;
+     display: flex;
+     flex: 50%;
    }
  }
  
  @media only screen and (max-width: 767px) {
    #diablo-4-header {
-	 margin-top: -35%;
+     margin-top: -35%;
    }
  }
  
