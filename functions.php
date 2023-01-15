@@ -14,13 +14,19 @@
 /**
  * Dequeue the Storefront Parent theme core CSS
  */
-function sf_child_theme_dequeue_style() {
-    wp_dequeue_style( 'storefront-style' );
-    wp_dequeue_style( 'storefront-woocommerce-style' );
+function sf_child_theme_dequeue_style()
+{
+    wp_dequeue_style('storefront-style');
+    wp_dequeue_style('storefront-woocommerce-style');
 }
 
 /**
  * Note: DO NOT! alter or remove the code above this text and only add your custom PHP functions below this text.
  */
 
+function add_font_awesome_styles()
+{
+    wp_enqueue_style('fa',  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+}
 
+add_action('wp_enqueue_scripts', 'add_font_awesome_styles');

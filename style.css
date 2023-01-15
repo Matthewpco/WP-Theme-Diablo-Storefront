@@ -22,9 +22,8 @@ Images License: GNU General Public License v2 or later
 /*
  * Add your own custom css below this text.
  */
-/* =Reset
--------------------------------------------------------------- */
- 
+//    CSS Reset
+-------------------------------------------------------------- */ html,
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -41,198 +40,370 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	list-style: none;
 }
 
-/* Header and Nav styles */
+/* Header and Nav styles  */
 
 #diablo-4-header {
-	background-color: rgba(0,0,0,0);
-	padding: 1%;
-	position: sticky;
-	top: 20px;
-	margin-top: -10%;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 1%;
+  position: sticky;
+  top: 0;
+  margin-top: -10%;
 }
 
 #diablo-4-nav {
-	background-color: #1D1E1E;
-	border-radius: 8px;
-	display: flex;
-	align-items: center;
+  background-color: #1d1e1e;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
 }
 
-#diablo-4-nav ul li a {
-	color: #fff;
-}
 #diablo-4-nav .primary-nav {
-	width: 100%;
+  width: 100%;
 }
 
 #diablo-4-nav .primary-nav ul {
-	display: flex;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 #diablo-4-nav .primary-nav ul li {
-	width: 6%;
-	font-size: 1.2rem;
-	align-self: center;
-}
-#diablo-4-nav .primary-nav ul li:nth-child(1) {
-	background-color: #141515;
-	padding: 12px;
+  font-size: 1.2rem;
+  align-self: center;
 }
 
-#diablo-4-nav .primary-nav ul li:nth-child(9) {
-	margin-left: 35%;
+#diablo-4-nav ul li a {
+  color: #fff;
+}
+
+#diablo-4-nav .primary-nav ul li:nth-child(2) {
+  background-color: #141515;
+  padding: 1%;
+}
+#diablo-4-nav .primary-nav ul li:nth-child(2) img {
+  height: 40px;
+}
+#diablo-4-nav .primary-nav ul li:nth-child(10) {
+  margin-left: 35%;
+}
+
+#diablo-4-nav .primary-nav ul li:last-child {
+  margin-right: 1%;
+}
+
+#menu-toggle {
+  margin-left: 2%;
+}
+.mobile-icon {
+  display: none;
+}
+
+/* Mobile header modal styles */
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  margin-right: 50%;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #18191b;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animateleft;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animateleft;
+  animation-duration: 0.4s;
+  width: 80%;
+  margin-right: 20%;
+}
+
+/* Add Animation */
+@-webkit-keyframes animateleft {
+  from {
+    left: -50%;
+    opacity: 0;
+  }
+
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animateleft {
+  from {
+    left: -50%;
+    opacity: 0;
+  }
+
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.modal-header .close {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  background: #242527;
+  padding: 0 2.5%;
+  margin: 1%;
+  border-radius: 6px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  background-color: #18191b;
+  display: flex;
+}
+
+.modal-header a {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15%;
+}
+
+.modal-header a img {
+  height: 50px;
+  margin: 1%;
+}
+
+.modal-body {
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.modal-body nav ul {
+  list-style: none;
+  margin: 0;
+}
+
+.modal-body nav ul li {
+  padding: 2% 5%;
+}
+
+.modal-body nav ul a {
+  color: #fff;
+}
+
+.modal-footer {
+  background-color: #111113;
+  padding-left: 5%;
+}
+
+.modal-footer div a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.pre-purchase-mobile {
+  text-align: center;
+  background-color: #a50905;
+  border-radius: 6px;
+  padding: 1%;
+  margin: 5%;
 }
 
 /* Front-page styles */
 #d4s-front-page {
-	background-color: #000;
-	min-height: 1200px;
+  background-color: #000;
+  min-height: 1200px;
 }
 #d4s-front-page h2 {
-	color: #fff;
-	padding-top: 10%;
+  color: #fff;
+  padding-top: 10%;
 }
 .page-spacer {
-	background-color: #232323;
-	min-height: 1400px;
+  background-color: #232323;
+  min-height: 1400px;
+}
+
+.main-nav ul li:first-child {
+  display: none;
+}
+
+/* Front-page styles */
+#d4s-front-page {
+  background-color: #000;
+  min-height: 1200px;
+}
+#d4s-front-page h2 {
+  color: #fff;
+  padding-top: 10%;
+}
+.page-spacer {
+  background-color: #232323;
+  min-height: 1400px;
+}
+
+/* Footer styles */
+
+footer .container {
+  padding: 2rem 0 0.5rem;
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 -1rem;
+}
+
+.footer-nav {
+  margin: 2rem 0;
+  text-decoration: none;
+}
+
+.footer-nav a {
+  color: #b0afab;
+}
+
+.all-games {
+  margin: 2rem 0;
+}
+
+.all-games a {
+  color: #009dff;
+}
+
+.all-games p a:hover {
+  color: #00b5ff;
+}
+
+.copyright p {
+  margin: 1.5rem 0 0.5rem;
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+
+.copyright span {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+footer h6 {
+  margin-top: 0.5rem;
+
+  text-decoration: none;
+}
+
+footer h6 a {
+  color: #b0afab;
+  margin: 0 0.5rem;
+}
+
+footer h5 a {
+  margin: 0 0.5rem;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer .legal-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 0.6rem;
+}
+
+.footer-legal li {
+  font-size: 0.7rem;
+  line-height: 0.9rem;
+  text-align: left;
+}
+
+#esrb-policy {
+  display: block;
+  max-height: 97px;
+  margin-right: 0.5rem;
+  border-radius: 0;
+}
+
+#esrb-mature {
+  display: block;
+  max-height: 97px;
+  margin-right: 0.5rem;
 }
 
 /* Mobile and tablet media queries */
 
-/* Front-page styles */
-#d4s-front-page {
-	background-color: #000;
-	min-height: 1200px;
-}
-#d4s-front-page h2 {
-	color: #fff;
-	padding-top: 10%;
-}
-.page-spacer {
-	background-color: #232323;
-	min-height: 1400px;
-}
+/* Header media queries */
 
 
-/* Front-page styles */
-#d4s-front-page {
-	background-color: #000;
-	min-height: 1200px;
-}
-#d4s-front-page h2 {
-	color: #fff;
-	padding-top: 10%;
-}
-.page-spacer {
-	background-color: #232323;
-	min-height: 1400px;
-}
+@media screen and (max-width: 1200px) {
+  /* Tablet & Mobile header styles */
 
+  #diablo-4-header {
+    margin-top: -15%;
+  }
 
-/* Footer styles */
-
-.todo{
-	background-color: #232323; 
-	padding-left: 1%;
-}
-
-footer .container{
-	padding: 2rem 0 .5rem;
-}
-.footer-logo{
-	display:flex;
-	justify-content: center;
-	margin: 0  0 -1rem;
-}
-
-.all-games{
-	margin: 2rem 0;
-}
-
-.all-games a{
-	color: #009dff;
-}
-
-.all-games p a:hover{
-	color: #00b5ff;
-}
-
-.copyright p{
-	margin: 1.5rem 0 .4rem;
-	font-weight: lighter;
-	font-size: .8rem;
-}
-
-.copyright span{
-	font-weight: bold;
-}
-
-footer p{
-	font-size: 1rem;
-}
-
-footer a{
-	color: #B0AFAB;
-	margin: 0 .5rem;
-}
-
-.upper-nav-ul{
-	display:flex;
-	justify-content: center;
-	color: #B0AFAB;
-	margin: 1.9rem 0;
-}
-
-.upper-nav-ul li{
-	font-size: 1rem;
-}
-.upper-nav-ul li a{
-	font-weight: 500;
-}
-
-.lower-nav-ul{
-	display:flex;
-	justify-content: center;
-	color: #B0AFAB;
-	margin-bottom: 1.6rem;
-}
-
-.lower-nav-ul li{
-	font-size: .7rem;
-}
-
-.lower-nav-ul li a{
-	font-weight: 500;
-}
-
-footer a:hover{
-	color: #fff;
-}
-
-.legal-container{
-	display: flex;
+  .mobile-icon {
     display: flex;
-    justify-content: center;
-	margin-top: .6rem;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 2%;
+  }
+
+  .main-nav a.icon {
+    display: block;
+  }
+
+  .main-nav ul li {
+    display: none;
+  }
+
+  .main-nav ul li:first-child {
+    display: flex;
+    flex: 45%;
+  }
+
+  .main-nav ul li:nth-child(3) {
+    display: flex;
+    flex: 50%;
+  }
 }
 
-.footer-legal li{
-	font-size: .7rem;
-    line-height: .9rem;
-	text-align: left;
-}
-
-#esrb-policy{
-	display: block;
-    max-height: 97px;
-	margin-right: .5rem;
-	border-radius: 0;
-}
-
-#esrb-mature{
-	display: block;
-    max-height: 97px;
-	margin-right: .5rem;
+@media only screen and (max-width: 767px) {
+  #diablo-4-header {
+    margin-top: -35%;
+  }
 }
 
 /* Footer Mobile & Tablet media queries */
