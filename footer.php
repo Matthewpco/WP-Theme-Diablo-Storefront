@@ -8,9 +8,6 @@
  */
 
 ?>
-<div class="todo">
-TODO Reese feature: D4S-2 <a href="https://www.notion.so/D4S-2-1d546517eefb49afaf8ab4ad8ac1c5de">Notion task link</a>
-</div>
 <!-- Footer content begin -->
 	<footer id="main-footer"  role="contentinfo">	
 		<div class="container" style="text-align: center; background: #000; color: #B0AFAB;">
