@@ -8,15 +8,12 @@
  */
 
 ?>
-<div class="todo">
-TODO Reese feature: D4S-2 <a href="https://www.notion.so/D4S-2-1d546517eefb49afaf8ab4ad8ac1c5de">Notion task link</a>
-</div>
 <!-- Footer content begin -->
 	<footer id="main-footer"  role="contentinfo">	
 		<div class="container" style="text-align: center; background: #000; color: #B0AFAB;">
 			<!-- Footer logo -->							
 			<div class="footer-logo">
-				<a href="https://blizzard.com/"><img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/cropped-Blizzard_Entertainment_Logo-e1672944594113-1-e1673155978548.webp" alt="logo"></a>
+				<a href="https://blizzard.com/"><img src="/wp-content/uploads/2023/01/cropped-Blizzard_Entertainment_Logo-e1672944594113-1-e1673155978548.webp" alt="logo"></a>
 			</div>
 			<div class="top-nav">
 				<nav>
@@ -31,7 +28,7 @@ TODO Reese feature: D4S-2 <a href="https://www.notion.so/D4S-2-1d546517eefb49afa
 				</nav>
 			</div>
 			<div class="all-games">
-				<p>All games, one app: <img src="http://diablo4wptheme.local/wp-content/uploads/2023/01/ezgif.com-gif-maker-1.webp"><a href="https://www.blizzard.com/apps/battle.net/desktop">Battle.net Desktop App</a>
+				<p>All games, one app: <img src="/wp-content/uploads/2023/01/ezgif.com-gif-maker-1.webp"><a href="https://www.blizzard.com/apps/battle.net/desktop">Battle.net Desktop App</a>
 				</p>
 			</div>
 			<div class="copyright">
@@ -48,8 +45,8 @@ TODO Reese feature: D4S-2 <a href="https://www.notion.so/D4S-2-1d546517eefb49afa
 			</div>
 			<div class="footer-legal">
 				<div class="legal-container">
-					<img id="esrb-policy" src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/esrb.webp" alt="esrb-policy">
-					<img id="esrb-mature" src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/m.1BK7T.webp" alt="ESRB-mature">
+					<img id="esrb-policy" src="/wp-content/uploads/2023/01/esrb.webp" alt="esrb-policy">
+					<img id="esrb-mature" src="/wp-content/uploads/2023/01/m.1BK7T.webp" alt="ESRB-mature">
 					<ul>
 						<li>Blood and Gore</li>
 						<li>Intense Violence</li>
