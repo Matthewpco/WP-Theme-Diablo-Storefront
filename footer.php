@@ -21,12 +21,12 @@ TODO Reese feature: D4S-2 <a href="https://www.notion.so/D4S-2-1d546517eefb49afa
 			<div class="top-nav">
 				<nav>
 					<ul class="upper-nav-ul">
-						<li><a href="https://careers.blizzard.com/">CAREERS</a></li>
-						<li><a href="https://www.blizzard.com/company/about/">ABOUT</a></li>
-						<li><a href="https://www.battle.net/support/">SUPPORT</a></li>
-						<li><a href="https://blizzard.com/company/about/contact.html">CONTACT US</a></li>
-						<li><a href="https://blizzard.gamespress.com/">PRESS</a></li>
-						<li><a href="https://develop.battle.net/">API</a></li>
+						<li><a href="https://careers.blizzard.com/">CAREERS</a> | </li>
+						<li><a href="https://www.blizzard.com/company/about/">ABOUT</a> | </li>
+						<li><a href="https://www.battle.net/support/">SUPPORT</a> | </li>
+						<li><a href="https://blizzard.com/company/about/contact.html">CONTACT US</a> | </li>
+						<li><a href="https://blizzard.gamespress.com/">PRESS</a> | </li>
+						<li><a href="https://develop.battle.net/">API</a> | </li>
 					</ul>
 				</nav>
 			</div>
@@ -38,11 +38,11 @@ TODO Reese feature: D4S-2 <a href="https://www.notion.so/D4S-2-1d546517eefb49afa
 				<p>&copy 2023 BLIZZARD ENTERTAINMENT, INC. ALL RIGHTS RESERVED.<br>All <span>trademarks</span> referenced herin are the properties of thier respective owners.<br><span>Do not sell or share my personal information</span></p>
 				<nav>
 					<ul class="lower-nav-ul">
-						<li><a href="https://www.blizzard.com/privacy">PRIVACY</a></li>  
-						<li><a href="https://www.blizzard.com/legal/"> LEGAL</a></li> 
-						<li><a href="https://www.blizzard.com/legal/511dbf9e-2b2d-4047-8243-4c5c65e0ebf1/"> TERMS</a></li> 
-						<li><a href="https://www.blizzard.com/cookies"> COOKIE POLICY</a></li> 
-						<li><a href="https://www.blizzard.com/cookies#settings"> COOKIE SETTINGS</a></li>
+						<li><a href="https://www.blizzard.com/privacy">PRIVACY</a> | </li>  
+						<li><a href="https://www.blizzard.com/legal/"> LEGAL</a> | </li> 
+						<li><a href="https://www.blizzard.com/legal/511dbf9e-2b2d-4047-8243-4c5c65e0ebf1/"> TERMS</a> | </li>
+						<li><a href="https://www.blizzard.com/cookies"> COOKIE POLICY</a> | </li> 
+						<li><a href="https://www.blizzard.com/cookies#settings"> COOKIE SETTINGS</a> | </li>
 					</ul>
 				</nav>
 			</div>

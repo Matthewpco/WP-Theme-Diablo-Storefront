@@ -190,12 +190,7 @@ footer a{
 .upper-nav-ul li{
 	display: inline-block;
 	padding: 0;
-	border-left: 1px solid;
 	font-size: 1rem;
-}
-/* Remove Border on First element */
-.upper-nav-ul li:first-child{
-	border-left: none;
 }
 
 .upper-nav-ul li a{
@@ -210,12 +205,7 @@ footer a{
 .lower-nav-ul li{
 	display: inline-block;
 	padding: 0;
-	border-left: 1px solid;
 	font-size: .7rem;
-}
-/* Remove Border on First element */
-.lower-nav-ul li:first-child{
-	border-left: none;
 }
 
 .lower-nav-ul li a{
