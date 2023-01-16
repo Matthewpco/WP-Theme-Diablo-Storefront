@@ -137,12 +137,12 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 
 footer .container{
-	padding: 2rem 0 .5rem;
+	padding: 2rem .5rem;
 }
 .footer-logo{
 	display:flex;
 	justify-content: center;
-	margin: 0  0 -1rem;
+	margin: 0  2rem -1rem;
 }
 
 .all-games{
@@ -157,10 +157,15 @@ footer .container{
 	color: #00b5ff;
 }
 
+.all-games p img{
+	display: inline;
+	margin-left: .2rem;
+}
+
 .copyright p{
 	margin: 1.5rem 0 .4rem;
 	font-weight: lighter;
-	font-size: .8rem;
+	font-size: .5rem;
 }
 
 .copyright span{
@@ -176,29 +181,41 @@ footer a{
 	margin: 0 .5rem;
 }
 
+/* Both Footer Navigation Styles */
 .upper-nav-ul{
-	display:flex;
-	justify-content: center;
 	color: #B0AFAB;
 	margin: 1.9rem 0;
 }
 
 .upper-nav-ul li{
+	display: inline-block;
+	padding: 0;
+	border-left: 1px solid;
 	font-size: 1rem;
 }
+/* Remove Border on First element */
+.upper-nav-ul li:first-child{
+	border-left: none;
+}
+
 .upper-nav-ul li a{
 	font-weight: 500;
 }
 
 .lower-nav-ul{
-	display:flex;
-	justify-content: center;
 	color: #B0AFAB;
 	margin-bottom: 1.6rem;
 }
 
 .lower-nav-ul li{
+	display: inline-block;
+	padding: 0;
+	border-left: 1px solid;
 	font-size: .7rem;
+}
+/* Remove Border on First element */
+.lower-nav-ul li:first-child{
+	border-left: none;
 }
 
 .lower-nav-ul li a{
