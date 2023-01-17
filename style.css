@@ -22,10 +22,8 @@ Images License: GNU General Public License v2 or later
 /*
  * Add your own custom css below this text.
  */
-
-/* =Reset
+/* CSS Styles Reset to overwrite parent theme base settings
 -------------------------------------------------------------- */
- 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -42,93 +40,429 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	list-style: none;
 }
 
-/* Header and Nav styles */
+/* fonts:
+================================================================================= */
+
+/* Alegreya Sans */
+@font-face {
+  font-family: "Alegreya Sans";
+  font-weight: normal;
+  font-style: "normal";
+  src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt095210837aa1e0f0/625005917f50a04889644422/AlegreyaSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Alegreya Sans";
+  font-weight: 300;
+  src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blta747941659c3c73c/62500591844d9555dbf9416f/AlegreyaSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Alegreya Sans";
+  font-weight: bold;
+  src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltcb28d02e46f1735f/6250059188b34525a18e655f/AlegreyaSans-Bold.ttf");
+}
+
+/* Exocet Blizzard */
+@font-face {
+  font-family: "Exocet Blizzard";
+  font-weight: 300;
+  src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltc480ac92a523b007/627b28039c0ad045adc48481/ExocetBlizzardOT-Medium.ttf");
+}
+
+/* Old Fenris */
+@font-face {
+  font-family: "Old Fenris";
+  font-weight: 400;
+  src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt87dbca38eae7d12d/625007b988b34525a18e6563/OldFenris-Regular.otf");
+}
+
+/* Template Styles */
+
+/* The Mobile Modal /modal-menu */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  margin-right: 50%;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #18191b;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animateleft;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animateleft;
+  animation-duration: 0.4s;
+  width: 80%;
+  margin-right: 20%;
+}
+
+/* Add Animation */
+@-webkit-keyframes animateleft {
+  from {
+    left: -50%;
+    opacity: 0;
+  }
+
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animateleft {
+  from {
+    left: -50%;
+    opacity: 0;
+  }
+
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.modal-header .close {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  background: #242527;
+  padding: 0 2.5%;
+  margin: 1%;
+  border-radius: 6px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  background-color: #18191b;
+  display: flex;
+}
+
+.modal-header a {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15%;
+}
+
+.modal-header a img {
+  height: 50px;
+  margin: 1%;
+}
+
+.modal-body {
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.modal-body nav ul {
+  list-style: none;
+  margin: 0;
+}
+
+.modal-body nav ul li {
+  padding: 2% 5%;
+}
+
+.modal-body nav ul a {
+  color: #fff;
+}
+
+.modal-footer {
+  background-color: #111113;
+  padding-left: 5%;
+}
+
+.modal-footer div a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.pre-purchase-mobile {
+  text-align: center;
+  background-color: #a50905;
+  border-radius: 6px;
+  padding: 1%;
+  margin: 5%;
+}
+
+/* The Purchase Modal /pre-purchase-modal */
+
+/* The Purchase Modal */
+.purchase-modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.purchase-mobile-btn {
+  background-color: #a50905;
+  border-radius: 6px;
+  color: #fff;
+}
+
+#purchase-modal {
+  background: transparent;
+  backdrop-filter: blur(10px);
+}
+
+/* Modal Content */
+.purchase-modal-content {
+  position: relative;
+  padding: 0;
+  width: 100%;
+}
+
+/* The Close Button */
+.purchase-close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.purchase-close:hover,
+.purchase-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.purchase-modal-header {
+  padding: 1% 1% 4% 0;
+}
+
+.purchase-modal-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.purchase-modal-body h3 {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.purchase-modal-body h2 {
+  color: #d2c8ae;
+  margin-top: 2%;
+  font-family: "Old Fenris";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.purchase-modal-body p {
+  color: #878582;
+  font-size: 1.2rem;
+}
+
+#purchase-modal .full-section .one-third-section {
+  margin: 2% 2% 1% 2%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+#purchase-modal .full-section {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#purchase-modal .full-section button {
+  height: 125px;
+  width: 300px;
+  background-color: #550002;
+  margin: 2% 2% 1% 2%;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  transition-duration: 0.4s;
+}
+
+#purchase-modal .full-section button:hover {
+  background-color: #dd0707;
+}
+
+#purchase-modal .full-section p {
+  width: 300px;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0;
+}
+
+#purchase-modal .one-third-section li {
+  font-size: 0.9rem;
+  margin-left: 15%;
+  color: #bababa;
+  list-style-type: disc;
+}
+
+#purchase-modal .one-third-section h4 {
+  font-family: "Old Fenris", serif;
+  font-weight: 400;
+  line-height: 1.05;
+  padding: 5% 0 5% 10%;
+  align-self: baseline;
+  display: flex;
+  text-transform: uppercase;
+  text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+  color: #d2c8ae;
+}
+
+.purchase-modal-footer {
+  width: 40%;
+  margin: auto;
+  padding: 5% 0 5% 0;
+  color: rgba(255, 255, 255, 0.3);
+}
+/* Header and Nav styles  */
 
 #diablo-4-header {
-	background-color: rgba(0,0,0,0);
-	padding: 1%;
-	position: sticky;
-	top: 20px;
-	margin-top: -10%;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 1%;
+  position: sticky;
+  top: 0;
+  margin-top: -10%;
+  z-index: 1;
 }
 
 #diablo-4-nav {
-	background-color: #1D1E1E;
-	border-radius: 8px;
-	display: flex;
-	align-items: center;
+  background-color: #1d1e1e;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
 }
 
-#diablo-4-nav ul li a {
-	color: #fff;
-}
 #diablo-4-nav .primary-nav {
-	width: 100%;
+  width: 100%;
 }
 
 #diablo-4-nav .primary-nav ul {
-	display: flex;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 #diablo-4-nav .primary-nav ul li {
-	width: 6%;
-	font-size: 1.2rem;
-	align-self: center;
-}
-#diablo-4-nav .primary-nav ul li:nth-child(1) {
-	background-color: #141515;
-	padding: 12px;
+  font-size: 1.2rem;
+  align-self: center;
 }
 
-#diablo-4-nav .primary-nav ul li:nth-child(9) {
-	margin-left: 35%;
+#diablo-4-nav ul li a {
+  color: #fff;
+}
+
+#diablo-4-nav .primary-nav ul li:nth-child(2) {
+  background-color: #141515;
+  padding: 1%;
+}
+#diablo-4-nav .primary-nav ul li:nth-child(2) img {
+  height: 40px;
+}
+#diablo-4-nav .primary-nav ul li:nth-child(10) {
+  margin-left: 35%;
+}
+
+#diablo-4-nav .primary-nav ul li:last-child {
+  margin-right: 1%;
+}
+
+#menu-toggle {
+  margin-left: 2%;
+}
+.mobile-icon {
+  display: none;
+}
+
+/* Front-page styles */
+
+#d4s-front-page {
+  background-color: #000;
+  min-height: 1200px;
+}
+#d4s-front-page h2 {
+  color: #fff;
+  padding-top: 10%;
+}
+.page-spacer {
+  background-color: #232323;
+  min-height: 1400px;
+}
+
+.main-nav ul li:first-child {
+  display: none;
 }
 
 /* Front-page styles */
+
 #d4s-front-page {
-	background-color: #000;
-	min-height: 1200px;
+  background-color: #000;
+  min-height: 1200px;
 }
 #d4s-front-page h2 {
-	color: #fff;
-	padding-top: 10%;
+  color: #fff;
+  padding-top: 10%;
 }
 .page-spacer {
-	background-color: #232323;
-	min-height: 1400px;
+  background-color: #232323;
+  min-height: 1400px;
 }
-
-/* Mobile and tablet media queries */
-
-/* Front-page styles */
-#d4s-front-page {
-	background-color: #000;
-	min-height: 1200px;
-}
-#d4s-front-page h2 {
-	color: #fff;
-	padding-top: 10%;
-}
-.page-spacer {
-	background-color: #232323;
-	min-height: 1400px;
-}
-
-
-/* Front-page styles */
-#d4s-front-page {
-	background-color: #000;
-	min-height: 1200px;
-}
-#d4s-front-page h2 {
-	color: #fff;
-	padding-top: 10%;
-}
-.page-spacer {
-	background-color: #232323;
-	min-height: 1400px;
-}
-
 
 /* Footer styles */
 
@@ -241,6 +575,50 @@ footer a:hover{
 	display: block;
     max-height: 97px;
 	margin-right: .5rem;
+}
+
+/* Mobile and tablet media queries */
+
+/* Header media queries */
+
+@media screen and (max-width: 1200px) {
+  
+  /* Tablet & Mobile header styles */
+
+  #diablo-4-header {
+    margin-top: -15%;
+  }
+
+  .mobile-icon {
+    display: flex;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 2%;
+  }
+
+  .main-nav a.icon {
+    display: block;
+  }
+
+  .main-nav ul li {
+    display: none;
+  }
+
+  .main-nav ul li:first-child {
+    display: flex;
+    flex: 45%;
+  }
+
+  .main-nav ul li:nth-child(3) {
+    display: flex;
+    flex: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #diablo-4-header {
+    margin-top: -35%;
+  }
 }
 
 /* Footer Mobile & Tablet media queries */
