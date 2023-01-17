@@ -35,4 +35,4 @@
             <div><i class="fa-solid fa-gamepad" style="margin-right: 2%;"></i><a href="https://www.blizzard.com/en-us/games">All Games</a></div>
         </div>
     </div>
-</div>
+</div><!-- The  Modal End -->

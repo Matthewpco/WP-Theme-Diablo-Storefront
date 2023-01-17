@@ -54,12 +54,14 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 @font-face {
   font-family: "Alegreya Sans";
   font-weight: 300;
+  font-display: swap;
   src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blta747941659c3c73c/62500591844d9555dbf9416f/AlegreyaSans-Medium.ttf");
 }
 
 @font-face {
   font-family: "Alegreya Sans";
   font-weight: bold;
+  font-display: swap;
   src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltcb28d02e46f1735f/6250059188b34525a18e655f/AlegreyaSans-Bold.ttf");
 }
 
@@ -67,6 +69,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 @font-face {
   font-family: "Exocet Blizzard";
   font-weight: 300;
+  font-display: swap;
   src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltc480ac92a523b007/627b28039c0ad045adc48481/ExocetBlizzardOT-Medium.ttf");
 }
 
@@ -74,6 +77,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 @font-face {
   font-family: "Old Fenris";
   font-weight: 400;
+  font-display: swap;
   src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt87dbca38eae7d12d/625007b988b34525a18e6563/OldFenris-Regular.otf");
 }
 
@@ -557,13 +561,21 @@ footer .legal-container {
   margin-right: 0.5rem;
 }
 
-/* Mobile and tablet media queries */
+/* Responsive media queries */
 
-/* Header media queries */
+/* Laptop media queries */
+@media screen and (max-width: 1439px) {
 
-@media screen and (max-width: 1200px) {
-  /* Tablet & Mobile header styles */
+  #diablo-4-nav .primary-nav ul li:nth-child(10) {
+    margin-left: 25%;
+  }
 
+}
+
+/* Tablet media queries */
+@media screen and (max-width: 1023px) {
+
+  /* Header */
   #diablo-4-header {
     margin-top: -15%;
   }
@@ -593,11 +605,39 @@ footer .legal-container {
     flex: 50%;
   }
 }
-
+/* Mobile media queries */
 @media only screen and (max-width: 767px) {
+
+  /* Header */
   #diablo-4-header {
     margin-top: -35%;
   }
-}
 
-/* Footer Mobile & Tablet media queries */
+  .modal-header a img {
+    height: 40px;
+  }
+
+  .purchase-modal-body h3 {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  #purchase-modal .full-section {
+    flex-direction: column;
+  }
+
+.purchase-modal-body h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  }
+
+  .purchase-modal-body p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .purchase-modal-footer {
+    width: 80%;
+  }
+
+}

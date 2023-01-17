@@ -17,23 +17,32 @@
         <div class="purchase-modal-body">
             <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/d4-logo-002.webp" />
             <h3>Pre-order Diablo® IV and receive Early Access to the Open Beta* and Light Bearer Mount in Diablo® IV.</h3>
+
             <div class="full-section">
-                <button>BATTLE.NET</button>
-                <button>XBOX</button>
-                <button>PLAYSTATION</button>
+
+                <div class="one-third-section">
+                    <a href="https://shop.battle.net/product/diablo-iv"><button>BATTLE.NET</button></a>
+                    <p>Windows</p>
+
+                </div>
+
+                <div class="one-third-section">
+                    <a href="https://www.xbox.com/games/diablo-IV"><button>XBOX</button></a>
+                    <p>Xbox Series X|S</p>
+                    <p>Xbox One</p>
+                </div>
+
+                <div class="one-third-section">
+                    <a href="https://store.playstation.com/concept/231761/"><button>PLAYSTATION</button></a>
+                    <p>Playstation 5</p>
+                    <p>Playstation 4</p>
+                </div>
+
             </div>
-            <div class="full-section">
-                <p>Windows</p>
-                <p>Xbox Series X|S</p>
-                <p>Playstation 5</p>
-            </div>
-            <div class="full-section">
-                <p></p>
-                <p>Xbox One</p>
-                <p>Playstation 4</p>
-            </div>
+
             <h2>COMPARE EDITIONS</h2>
             <p>Upgrade your Diablo IV experience with the Digital Deluxe or Ultimate Edition.</p>
+
             <div class="full-section">
 
                 <div class="one-third-section">
@@ -128,37 +137,4 @@
         </div>
 
     </div>
-</div>
-
-<script>
-    // Get the pre-purchase modal
-    var purchaseModal = document.getElementById("purchase-modal");
-
-    // Get the button that opens the modal
-    var purchaseBtn = document.querySelectorAll("#menu-item-85");
-
-    // Get the <span> element that closes the modal
-    var purchaseSpan = document.getElementsByClassName("purchase-close")[0];
-
-    // When the user clicks the main header button, open the modal 
-    purchaseBtn[0].onclick = function() {
-        purchaseModal.style.display = "flex";
-    }
-
-    // When the user clicks the mobile header button, open the modal 
-    purchaseBtn[1].onclick = function() {
-        purchaseModal.style.display = "flex";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    purchaseSpan.onclick = function() {
-        purchaseModal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == purchaseModal) {
-            purchaseModal.style.display = "none";
-        }
-    }
-</script>
+</div><!-- The Pre-Purchase Modal End -->
