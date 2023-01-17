@@ -27,11 +27,12 @@ function sf_child_theme_dequeue_style()
 /**
  * Enqueue a script
  */
-function d4s_enqueue_mobile_modal()
+function d4s_enqueue_scripts()
 {
     wp_enqueue_script('mobile-menu-modal', get_stylesheet_directory_uri() . '/js/mobile-menu-modal.js', array(), true);
+    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap', false);
 }
-add_action('wp_enqueue_scripts', 'd4s_enqueue_mobile_modal');
+add_action('wp_enqueue_scripts', 'd4s_enqueue_scripts');
 
 // Meant for scripts that need to be deferred to work properly
 function d4s_defer_scripts($tag, $handle, $src)
