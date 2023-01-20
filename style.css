@@ -54,12 +54,14 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 @font-face {
   font-family: "Alegreya Sans";
   font-weight: 300;
+  font-display: swap;
   src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blta747941659c3c73c/62500591844d9555dbf9416f/AlegreyaSans-Medium.ttf");
 }
 
 @font-face {
   font-family: "Alegreya Sans";
   font-weight: bold;
+  font-display: swap;
   src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltcb28d02e46f1735f/6250059188b34525a18e655f/AlegreyaSans-Bold.ttf");
 }
 
@@ -67,6 +69,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 @font-face {
   font-family: "Exocet Blizzard";
   font-weight: 300;
+  font-display: swap;
   src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltc480ac92a523b007/627b28039c0ad045adc48481/ExocetBlizzardOT-Medium.ttf");
 }
 
@@ -74,6 +77,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 @font-face {
   font-family: "Old Fenris";
   font-weight: 400;
+  font-display: swap;
   src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt87dbca38eae7d12d/625007b988b34525a18e6563/OldFenris-Regular.otf");
 }
 
@@ -466,125 +470,112 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 
 /* Footer styles */
 
-.todo{
-	background-color: #232323; 
-	padding-left: 1%;
+footer .container {
+  padding: 2rem 0 0.5rem;
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 -1rem;
 }
 
-footer .container{
-	padding: 2rem .5rem;
-}
-.footer-logo{
-	display:flex;
-	justify-content: center;
-	margin: 0  2rem -1rem;
+.footer-nav {
+  margin: 2rem 0;
+  text-decoration: none;
 }
 
-.all-games{
-	margin: 2rem 0;
+.footer-nav a {
+  color: #b0afab;
 }
 
-.all-games a{
-	color: #009dff;
+.all-games {
+  margin: 2rem 0;
 }
 
-.all-games p a:hover{
-	color: #00b5ff;
+.all-games a {
+  color: #009dff;
 }
 
-.all-games p img{
-	display: inline;
-	margin-left: .2rem;
+.all-games p a:hover {
+  color: #00b5ff;
 }
 
-.copyright p{
-	margin: 1.5rem 0 .4rem;
-	font-weight: lighter;
-	font-size: .8rem;
+.copyright p {
+  margin: 1.5rem 0 0.5rem;
+  font-weight: lighter;
+  font-size: 0.8rem;
 }
 
-.copyright span{
-	font-weight: bold;
+.copyright span {
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 
-footer p{
-	font-size: 1rem;
+footer p {
+  font-size: 1rem;
 }
 
-footer a{
-	color: #B0AFAB;
-	margin: 0 .5rem;
+footer h6 {
+  margin-top: 0.5rem;
+
+  text-decoration: none;
 }
 
-/* Both Footer Navigation Styles */
-.upper-nav-ul{
-	color: #B0AFAB;
-	margin: 1.9rem 0;
+footer h6 a {
+  color: #b0afab;
+  margin: 0 0.5rem;
 }
 
-.upper-nav-ul li{
-	display: inline-block;
-	padding: 0;
-	font-size: 1rem;
+footer h5 a {
+  margin: 0 0.5rem;
 }
 
-.upper-nav-ul li a{
-	font-weight: 500;
+footer a:hover {
+  color: #fff;
 }
 
-.lower-nav-ul{
-	color: #B0AFAB;
-	margin-bottom: 1.6rem;
+footer .legal-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 0.6rem;
 }
 
-.lower-nav-ul li{
-	display: inline-block;
-	padding: 0;
-	font-size: .7rem;
+.footer-legal li {
+  font-size: 0.7rem;
+  line-height: 0.9rem;
+  text-align: left;
 }
 
-.lower-nav-ul li a{
-	font-weight: 500;
+#esrb-policy {
+  display: block;
+  max-height: 97px;
+  margin-right: 0.5rem;
+  border-radius: 0;
 }
 
-footer a:hover{
-	color: #fff;
+#esrb-mature {
+  display: block;
+  max-height: 97px;
+  margin-right: 0.5rem;
 }
 
-.legal-container{
-	display: flex;
-    display: flex;
-    justify-content: center;
-	margin-top: .6rem;
+/* Responsive media queries */
+
+/* Laptop media queries */
+@media screen and (max-width: 1439px) {
+
+  #diablo-4-nav .primary-nav ul li:nth-child(10) {
+    margin-left: 25%;
+  }
+
 }
 
-.footer-legal li{
-	font-size: .7rem;
-    line-height: .9rem;
-	text-align: left;
-}
+/* Tablet media queries */
+@media screen and (max-width: 1023px) {
 
-#esrb-policy{
-	display: block;
-    max-height: 97px;
-	margin-right: .5rem;
-	border-radius: 0;
-}
-
-#esrb-mature{
-	display: block;
-    max-height: 97px;
-	margin-right: .5rem;
-}
-
-/* Mobile and tablet media queries */
-
-/* Header media queries */
-
-@media screen and (max-width: 1200px) {
-  
-  /* Tablet & Mobile header styles */
-
+  /* Header */
   #diablo-4-header {
     margin-top: -15%;
   }
@@ -614,11 +605,39 @@ footer a:hover{
     flex: 50%;
   }
 }
-
+/* Mobile media queries */
 @media only screen and (max-width: 767px) {
+
+  /* Header */
   #diablo-4-header {
     margin-top: -35%;
   }
-}
 
-/* Footer Mobile & Tablet media queries */
+  .modal-header a img {
+    height: 40px;
+  }
+
+  .purchase-modal-body h3 {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  #purchase-modal .full-section {
+    flex-direction: column;
+  }
+
+.purchase-modal-body h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  }
+
+  .purchase-modal-body p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .purchase-modal-footer {
+    width: 80%;
+  }
+
+}

@@ -29,7 +29,8 @@ function sf_child_theme_dequeue_style()
  */
 function d4s_enqueue_scripts()
 {
-    wp_enqueue_script('mobile-menu-modal', get_stylesheet_directory_uri() . '/js/mobile-menu-modal.js', array(), true);
+    wp_enqueue_script('mobile-menu-modal', get_stylesheet_directory_uri() . '/assets/js/mobile-menu-modal.js', array(), true);
+    wp_enqueue_script('purchase-modal', get_stylesheet_directory_uri() . '/assets/js/purchase-modal.js', array(), true);
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap', false);
 }
 add_action('wp_enqueue_scripts', 'd4s_enqueue_scripts');
@@ -39,6 +40,7 @@ function d4s_defer_scripts($tag, $handle, $src)
 {
     $defer = array(
         'mobile-menu-modal',
+        'purchase-modal',
     );
     if (in_array($handle, $defer)) {
         return '<script src="' . $src . '" defer="defer" type="text/javascript"></script>' . "\n";
