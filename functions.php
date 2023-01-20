@@ -31,6 +31,7 @@ function d4s_enqueue_scripts()
 {
     wp_enqueue_script('mobile-menu-modal', get_stylesheet_directory_uri() . '/assets/js/mobile-menu-modal.js', array(), true);
     wp_enqueue_script('purchase-modal', get_stylesheet_directory_uri() . '/assets/js/purchase-modal.js', array(), true);
+    wp_enqueue_script('wc-classes', get_stylesheet_directory_uri() . '/assets/js/wc-classes.js', array(), true);
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap', false);
 }
 add_action('wp_enqueue_scripts', 'd4s_enqueue_scripts');
@@ -41,6 +42,7 @@ function d4s_defer_scripts($tag, $handle, $src)
     $defer = array(
         'mobile-menu-modal',
         'purchase-modal',
+
     );
     if (in_array($handle, $defer)) {
         return '<script src="' . $src . '" defer="defer" type="text/javascript"></script>' . "\n";
@@ -48,3 +50,15 @@ function d4s_defer_scripts($tag, $handle, $src)
     return $tag;
 }
 add_filter('script_loader_tag', 'd4s_defer_scripts', 10, 3);
+
+function d4s_export_scripts($tag, $handle, $src)
+{
+    $export = array(
+        'wc-classes',
+    );
+    if (in_array($handle, $export)) {
+        return '<script src="' . $src . '" defer="defer" type="module"></script>' . "\n";
+    }
+    return $tag;
+}
+add_filter('script_loader_tag', 'd4s_export_scripts', 10, 3);

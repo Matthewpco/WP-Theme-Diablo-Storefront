@@ -68,7 +68,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 /* Exocet Blizzard */
 @font-face {
   font-family: "Exocet Blizzard";
-  font-weight: 300;
+  font-weight: normal;
   font-display: swap;
   src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltc480ac92a523b007/627b28039c0ad045adc48481/ExocetBlizzardOT-Medium.ttf");
 }
@@ -76,12 +76,38 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 /* Old Fenris */
 @font-face {
   font-family: "Old Fenris";
-  font-weight: 400;
+  font-weight: normal;
   font-display: swap;
   src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt87dbca38eae7d12d/625007b988b34525a18e6563/OldFenris-Regular.otf");
 }
+/* Colors */
 
+.color-brown {
+  color: #aa9480;
+}
+
+.color-gray {
+  color: #878582;
+}
+
+.color-dark-gray {
+  color: #b0afac;
+}
+
+.color-tan {
+  color: #d2c8ae;
+}
 /* Template Styles */
+
+.row {
+  display: flex;
+}
+
+.row div {
+  background-image: url(https://blz-contentstack-images.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blt903e10b7d3772801/6250b7d337d89b0f2fecca8b/leather-texture_800.jpg?format=webply&quality=80);
+  background-size: 550px;
+  background-repeat: repeat;
+}
 
 /* The Mobile Modal /modal-menu */
 .modal {
