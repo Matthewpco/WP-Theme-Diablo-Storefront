@@ -109,6 +109,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   background-repeat: repeat;
 }
 
+
+
 /* The Mobile Modal /modal-menu */
 .modal {
   display: none;
@@ -665,5 +667,20 @@ footer .legal-container {
   .purchase-modal-footer {
     width: 80%;
   }
+
+  /* Class-section */
+
+.classes-content .classes-header h3 {
+  font-size: 1.5rem;
+}
+
+.classes-content .classes-header {
+  padding: 1% 5% 1% 5%;
+}
+
+.classes-content .classes-body {
+  background-image: url(http://garyp38.sg-host.com/wp-content/uploads/2023/01/d4-class-bg-mobile-background-001.webp);
+  background-position: initial;
+}
 
 }
