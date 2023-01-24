@@ -975,6 +975,31 @@ footer .legal-container {
     margin-top: -35%;
   }
 
+  .mobile-icon {
+    display: flex;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 2%;
+  }
+
+  .main-nav a.icon {
+    display: block;
+  }
+
+  .main-nav ul li {
+    display: none;
+  }
+
+  .main-nav ul li:first-child {
+    display: flex;
+    flex: 45%;
+  }
+
+  .main-nav ul li:nth-child(3) {
+    display: flex;
+    flex: 50%;
+  }
+
   .modal-header a img {
     height: 40px;
   }
@@ -1045,7 +1070,7 @@ footer .legal-container {
 }
 
 /* Tablet media queries */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 
   /* Header */
   #diablo-4-header {
@@ -1077,6 +1102,14 @@ footer .legal-container {
     flex: 50%;
   }
 
+  #purchase-modal .full-section {
+    flex-direction: column;
+  }
+
+  #purchase-modal .one-third-section h4 {
+    padding: 5% 0 5% 35%;
+}
+
   /* World section */
   .world-footer .one-half-section {
     width: 100%;
@@ -1089,7 +1122,7 @@ footer .legal-container {
 }
 
 /* Laptop media queries */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
 
   #diablo-4-nav .primary-nav ul li:nth-child(10) {
     margin-left: 25%;
@@ -1114,4 +1147,3 @@ footer .legal-container {
 @media only screen and (min-width: 1440px) {
   
 }
-
