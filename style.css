@@ -874,11 +874,6 @@ input[type=range]:focus::-moz-range-thumb {
 
 /* Footer styles */
 
-.todo{
-	background-color: #232323; 
-	padding-left: 1%;
-}
-
 #main-footer .container{
   text-align: center;
   background-color: #000;
@@ -924,13 +919,6 @@ footer .container{
 }
 
 /* Footer main area */
-
-/********* Remove to replace with Matthew's logo 
-Just needed for sizing *********/
-.footer-logo img{
-  max-height: 6rem;
-}
-/*****************************/
 
 .all-games{
 	margin: 2rem 0;
@@ -1028,7 +1016,6 @@ footer a:hover{
     max-height: 97px;
 	margin-right: .5rem;
 }
-
 
 /* Responsive media queries */
 

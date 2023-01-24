@@ -31,7 +31,7 @@
 		</div>
 			<!-- Footer logo -->							
 			<div class="footer-logo">
-				<a href="https://blizzard.com/"  target="_blank" ><img src="http://diablo41.local/wp-content/uploads/2023/01/cropped-Blizzard_Entertainment_Logo-e1672944594113.webp"alt="logo"></a>
+				<a href="https://blizzard.com/"  target="_blank" ><img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/cropped-Blizzard_Entertainment_Logo-e1672944594113-1-e1673155978548.webp" alt="logo"></a>
 			</div>
 			<div class="top-nav">
 				<nav>
