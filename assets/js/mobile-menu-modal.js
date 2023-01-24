@@ -12,6 +12,7 @@ btn.onclick = function() {
   if (modal.style.display = "block") {
     modal.style.display = "none";
   }
+  
   if (modal.style.display = "none") {
     modal.style.display = "block";
   }

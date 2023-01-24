@@ -22,225 +22,1128 @@ Images License: GNU General Public License v2 or later
 /*
  * Add your own custom css below this text.
  */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-/* =Reset
--------------------------------------------------------------- */
- 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, ins, kbd, q, s, samp,
+del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-
-	padding: 0;
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
+	padding: 0;
 	border: 0;
-	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  text-decoration: none;
+}
+ol, ul {
 	list-style: none;
 }
+/* Standard classes */
 
-/* Header and Nav styles */
+.one-half-section {
+  width: 50%;
+}
+/* fonts:
+================================================================================= */
+
+/* Alegreya Sans */
+@font-face {
+  font-family: "Alegreya Sans";
+  font-weight: normal;
+  font-style: "normal";
+  src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt095210837aa1e0f0/625005917f50a04889644422/AlegreyaSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Alegreya Sans";
+  font-weight: 300;
+  font-display: swap;
+  src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blta747941659c3c73c/62500591844d9555dbf9416f/AlegreyaSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Alegreya Sans";
+  font-weight: bold;
+  font-display: swap;
+  src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltcb28d02e46f1735f/6250059188b34525a18e655f/AlegreyaSans-Bold.ttf");
+}
+
+/* Exocet Blizzard */
+@font-face {
+  font-family: "Exocet Blizzard";
+  font-weight: normal;
+  font-display: swap;
+  src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltc480ac92a523b007/627b28039c0ad045adc48481/ExocetBlizzardOT-Medium.ttf");
+}
+
+/* Old Fenris */
+@font-face {
+  font-family: "Old Fenris";
+  font-weight: normal;
+  font-display: swap;
+  src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt87dbca38eae7d12d/625007b988b34525a18e6563/OldFenris-Regular.otf");
+}
+/* Colors */
+
+.color-brown {
+  color: #aa9480;
+}
+
+.color-beige {
+  color: #e5e0c8;
+}
+
+.color-gray {
+  color: #878582;
+}
+
+.color-dark-gray {
+  color: #b0afac;
+}
+
+.color-tan {
+  color: #d2c8ae;
+}
+
+/* Header and Nav styles  */
 
 #diablo-4-header {
-	background-color: rgba(0,0,0,0);
-	padding: 1%;
-	position: sticky;
-	top: 20px;
-	margin-top: -10%;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 1%;
+  position: sticky;
+  top: 0;
+  margin-top: -10%;
+  z-index: 1;
 }
 
 #diablo-4-nav {
-	background-color: #1D1E1E;
-	border-radius: 8px;
-	display: flex;
-	align-items: center;
+  background-color: #1d1e1e;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
 }
 
-#diablo-4-nav ul li a {
-	color: #fff;
-}
 #diablo-4-nav .primary-nav {
-	width: 100%;
+  width: 100%;
 }
 
 #diablo-4-nav .primary-nav ul {
-	display: flex;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 #diablo-4-nav .primary-nav ul li {
-	width: 6%;
-	font-size: 1.2rem;
-	align-self: center;
-}
-#diablo-4-nav .primary-nav ul li:nth-child(1) {
-	background-color: #141515;
-	padding: 12px;
+  font-size: 1.1rem;
+  align-self: center;
+  font-family: 'Poppins';
+  font-weight: bold;
 }
 
-#diablo-4-nav .primary-nav ul li:nth-child(9) {
-	margin-left: 35%;
+#diablo-4-nav ul li a {
+  color: #fff;
+}
+
+#diablo-4-nav .primary-nav ul li:nth-child(2) {
+  background-color: #141515;
+  padding: 1%;
+}
+#diablo-4-nav .primary-nav ul li:nth-child(2) img {
+  height: 40px;
+}
+#diablo-4-nav .primary-nav ul li:nth-child(10) {
+  margin-left: 35%;
+}
+
+#diablo-4-nav .primary-nav ul li:last-child {
+  margin-right: 1%;
+}
+
+#menu-toggle {
+  margin-left: 2%;
+}
+.mobile-icon {
+  display: none;
+}
+
+/* Front-page styles */
+
+#d4s-front-page {
+  background-color: #000;
+  min-height: 1200px;
+}
+#d4s-front-page h2 {
+  color: #fff;
+  padding-top: 10%;
+}
+.page-spacer {
+  background-color: #232323;
+  min-height: 1400px;
+}
+
+.main-nav ul li:first-child {
+  display: none;
 }
 
 /* Front-page styles */
+
 #d4s-front-page {
-	background-color: #000;
-	min-height: 1200px;
+  background-color: #000;
+  min-height: 1200px;
 }
 #d4s-front-page h2 {
-	color: #fff;
-	padding-top: 10%;
+  color: #fff;
+  padding-top: 10%;
 }
 .page-spacer {
-	background-color: #232323;
-	min-height: 1400px;
+  background-color: #232323;
+  min-height: 1400px;
 }
 
-/* Mobile and tablet media queries */
+/* Template Styles */
 
-/* Front-page styles */
-#d4s-front-page {
-	background-color: #000;
-	min-height: 1200px;
-}
-#d4s-front-page h2 {
-	color: #fff;
-	padding-top: 10%;
-}
-.page-spacer {
-	background-color: #232323;
-	min-height: 1400px;
+.row {
+  display: flex;
 }
 
-
-/* Front-page styles */
-#d4s-front-page {
-	background-color: #000;
-	min-height: 1200px;
-}
-#d4s-front-page h2 {
-	color: #fff;
-	padding-top: 10%;
-}
-.page-spacer {
-	background-color: #232323;
-	min-height: 1400px;
+.overview-sub-section {
+  background-image: url(https://blz-contentstack-images.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blt903e10b7d3772801/6250b7d337d89b0f2fecca8b/leather-texture_800.jpg?format=webply&quality=80);
+  background-size: 550px;
+  background-repeat: repeat;
 }
 
+.hidden {
+  display: none;
+}
+
+/* The Mobile Modal /modal-menu */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  margin-right: 50%;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #18191b;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animateleft;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animateleft;
+  animation-duration: 0.4s;
+  width: 80%;
+  margin-right: 20%;
+}
+
+/* Add Animation */
+@-webkit-keyframes animateleft {
+  from {
+    left: -50%;
+    opacity: 0;
+  }
+
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animateleft {
+  from {
+    left: -50%;
+    opacity: 0;
+  }
+
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.modal-header .close {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  background: #242527;
+  padding: 0 2.5%;
+  margin: 1%;
+  border-radius: 6px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  background-color: #18191b;
+  display: flex;
+}
+
+.modal-header a {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15%;
+}
+
+.modal-header a img {
+  height: 50px;
+  margin: 1%;
+}
+
+.modal-body {
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.modal-body nav ul {
+  list-style: none;
+  margin: 0;
+}
+
+.modal-body nav ul li {
+  padding: 2% 5%;
+}
+
+.modal-body nav ul a {
+  color: #fff;
+}
+
+.modal-footer {
+  background-color: #111113;
+  padding-left: 5%;
+}
+
+.modal-footer div a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.pre-purchase-mobile {
+  text-align: center;
+  background-color: #a50905;
+  border-radius: 6px;
+  padding: 1%;
+  margin: 5%;
+}
+
+/* The Purchase Modal /pre-purchase-modal */
+
+/* The Purchase Modal */
+.purchase-modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.purchase-mobile-btn {
+  background-color: #a50905;
+  border-radius: 6px;
+  color: #fff;
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 15px 20px;
+}
+
+#purchase-modal {
+  background: transparent;
+  backdrop-filter: blur(10px);
+}
+
+/* Modal Content */
+.purchase-modal-content {
+  position: relative;
+  padding: 0;
+  width: 100%;
+}
+
+/* The Close Button */
+.purchase-close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.purchase-close:hover,
+.purchase-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.purchase-modal-header {
+  padding: 1% 1% 4% 0;
+}
+
+.purchase-modal-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.purchase-modal-body h3 {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.purchase-modal-body h2 {
+  color: #d2c8ae;
+  margin-top: 2%;
+  font-family: "Old Fenris";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.purchase-modal-body p {
+  color: #878582;
+  font-size: 1.2rem;
+}
+
+#purchase-modal .full-section .one-third-section {
+  margin: 2% 2% 1% 2%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+#purchase-modal .full-section {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#purchase-modal .full-section button {
+  height: 125px;
+  width: 300px;
+  background-color: #550002;
+  margin: 2% 2% 1% 2%;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  transition-duration: 0.4s;
+}
+
+#purchase-modal .full-section button:hover {
+  background-color: #dd0707;
+}
+
+#purchase-modal .full-section p {
+  width: 300px;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0;
+}
+
+#purchase-modal .one-third-section li {
+  font-size: 0.9rem;
+  margin-left: 15%;
+  color: #bababa;
+  list-style-type: disc;
+}
+
+#purchase-modal .one-third-section h4 {
+  font-family: "Old Fenris", serif;
+  font-weight: 400;
+  line-height: 1.05;
+  padding: 5% 0 5% 10%;
+  align-self: baseline;
+  display: flex;
+  text-transform: uppercase;
+  text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+  color: #d2c8ae;
+}
+
+.purchase-modal-footer {
+  width: 40%;
+  margin: auto;
+  padding: 5% 0 5% 0;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Class section */
+
+.classes-content {
+  background-color: #000;
+}
+
+.classes-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1% 30% 1% 30%;
+}
+
+.classes-header h2 {
+  font-size: 1.2rem;
+  font-family: 'Alegreya Sans';
+}
+
+.classes-header h3 {
+  font-size: 3rem;
+  font-family: 'Old Fenris';
+  padding-top: 0;
+}
+
+.classes-header p {
+  font-family: 'Alegreya Sans';
+  font-size: 1.2rem;
+}
+
+.classes-body {
+  background-image: url(http://garyp38.sg-host.com/wp-content/uploads/2023/01/d4-class-bg-desktop-background-001-scaled.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+/* The World section /world-section */
+
+.world-content {
+  background-color: #000;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 10% 0 10%;
+
+}
+
+.world-header h2 {
+  font-size: 1rem;
+  font-family: 'Alegreya Sans';
+  margin-top: 8%;
+
+}
+
+.world-header h3 {
+  font-size: 2.5rem;
+  font-family: 'Old Fenris';
+  padding-top: 0;
+}
+
+.world-header p {
+  font-size: 1.2rem;
+  font-family: 'Alegreya Sans';
+  margin: 0 30% 0 30%;
+}
+
+.world-content * {
+  box-sizing: border-box;
+}
+
+.world-content .row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.world-body {
+  background-image: url(http://garyp38.sg-host.com/wp-content/uploads/2023/01/d4-world-bg-mobile.jpg);
+  background-size: auto;
+  padding-top: 5%;
+  background-position: top;
+  padding-bottom: 10%;
+  background-repeat: no-repeat;
+}
+
+.world-view-all {
+  width: 100%;
+  padding: 3% 0;
+  font-size: 1.5rem;
+
+}
+
+.world-view-all button {
+  background-color: #28130D;
+  font-family: 'Exocet Blizzard';
+  border: 1px solid #737064;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  transition: .4s;
+  padding: 20px 30px 20px 30px;
+}
+
+.world-view-all button:hover {
+  background-color: #471D09;
+  color: #e5e0c8;
+  border: 1px solid #898678;
+}
+
+.world-view-all button:focus {
+  background-color: #471D09;
+  color: #e5e0c8;
+  border: 1px solid #898678;
+}
+
+.world-content .row>.column {
+  padding: 6px 6px;
+}
+
+.column {
+  width: 25%;
+}
+
+/* The Modal (background) */
+.world-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.world-modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  max-width: 1440px;
+  max-height: 500px;
+}
+
+/* The Close Button */
+.world-content .close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.world-content .close:hover,
+.world-content .close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.worldSlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.world-content .prev,
+.world-content .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.world-content .prev {
+  left: -10%;
+}
+
+/* Position the "next button" to the right */
+.world-content .next {
+  right: -10%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.world-content .prev:hover,
+.world-content .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.world-content .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.world-content .caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.world-content .demo {
+  opacity: 0.6;
+  max-height: 118px;
+  max-width: 284px;
+}
+
+.world-content .active,
+.world-content .demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+  max-width: 360px;
+  max-height: 90%;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div#world-comparison {
+  width: 60vw;
+  height: 60vw;
+  max-width: 416px;
+  max-height: 178px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 300px;
+}
+
+div#world-comparison figure {
+  background-image: url(http://garyp38.sg-host.com/wp-content/uploads/2023/01/Camps03-Large.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  font-size: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+div#world-comparison figure>img {
+  position: relative;
+  width: 100%;
+}
+
+div#world-comparison figure div {
+  background-image: url(http://garyp38.sg-host.com/wp-content/uploads/2023/01/Camps01-Large.webp);
+  background-size: cover;
+  position: absolute;
+  width: 50%;
+  box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  bottom: 0;
+  height: 100%;
+}
+
+input[type=range] {
+  position: relative;
+  top: -2rem;
+  left: -2%;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 102%;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]:active {
+  outline: none;
+}
+
+input[type=range]::-moz-range-track {
+  height: 15px;
+  width: 98%;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: relative;
+  outline: none;
+}
+
+input[type=range]::active {
+  border: none;
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  width: 20px;
+  height: 15px;
+  background: #fff;
+  border-radius: 0;
+}
+
+input[type=range]::-moz-range-thumb {
+  width: 20px;
+  height: 15px;
+  background: #fff;
+  border-radius: 0;
+}
+
+input[type=range]:focus::-webkit-slider-thumb {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+input[type=range]:focus::-moz-range-thumb {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.world-footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2% 10% 2% 10%;
+}
+
+.world-footer h3 {
+  font-size: 1.5rem;
+  padding-top: 2%;
+  font-family: 'Old Fenris';
+}
+
+.world-footer p {
+  font-size: 1rem;
+  padding: 1% 25%;
+  font-family: 'Alegreya Sans';
+}
 
 /* Footer styles */
 
-.todo{
-	background-color: #232323; 
-	padding-left: 1%;
+footer .container {
+  padding: 2rem 0 0.5rem;
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 -1rem;
 }
 
-footer .container{
-	padding: 2rem .5rem;
-}
-.footer-logo{
-	display:flex;
-	justify-content: center;
-	margin: 0  2rem -1rem;
+.footer-nav {
+  margin: 2rem 0;
+  text-decoration: none;
 }
 
-.all-games{
-	margin: 2rem 0;
+.footer-nav a {
+  color: #b0afab;
 }
 
-.all-games a{
-	color: #009dff;
+.all-games {
+  margin: 2rem 0;
 }
 
-.all-games p a:hover{
-	color: #00b5ff;
+.all-games a {
+  color: #009dff;
 }
 
-.all-games p img{
-	display: inline;
-	margin-left: .2rem;
+.all-games p a:hover {
+  color: #00b5ff;
 }
 
-.copyright p{
-	margin: 1.5rem 0 .4rem;
-	font-weight: lighter;
-	font-size: .8rem;
+.copyright p {
+  margin: 1.5rem 0 0.5rem;
+  font-weight: lighter;
+  font-size: 0.8rem;
 }
 
-.copyright span{
-	font-weight: bold;
+.copyright span {
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 
-footer p{
-	font-size: 1rem;
+footer p {
+  font-size: 1rem;
 }
 
-footer a{
-	color: #B0AFAB;
-	margin: 0 .5rem;
+footer h6 {
+  margin-top: 0.5rem;
+
+  text-decoration: none;
 }
 
-/* Both Footer Navigation Styles */
-.upper-nav-ul{
-	color: #B0AFAB;
-	margin: 1.9rem 0;
+footer h6 a {
+  color: #b0afab;
+  margin: 0 0.5rem;
 }
 
-.upper-nav-ul li{
-	display: inline-block;
-	padding: 0;
-	font-size: 1rem;
+footer h5 a {
+  margin: 0 0.5rem;
 }
 
-.upper-nav-ul li a{
-	font-weight: 500;
+footer a:hover {
+  color: #fff;
 }
 
-.lower-nav-ul{
-	color: #B0AFAB;
-	margin-bottom: 1.6rem;
+footer .legal-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 0.6rem;
 }
 
-.lower-nav-ul li{
-	display: inline-block;
-	padding: 0;
-	font-size: .7rem;
+.footer-legal li {
+  font-size: 0.7rem;
+  line-height: 0.9rem;
+  text-align: left;
 }
 
-.lower-nav-ul li a{
-	font-weight: 500;
+#esrb-policy {
+  display: block;
+  max-height: 97px;
+  margin-right: 0.5rem;
+  border-radius: 0;
 }
 
-footer a:hover{
-	color: #fff;
+#esrb-mature {
+  display: block;
+  max-height: 97px;
+  margin-right: 0.5rem;
 }
 
-.legal-container{
-	display: flex;
+/* Responsive media queries */
+
+/* Mobile media queries */
+@media only screen and (max-width: 767px) {
+
+  /* Header */
+  #diablo-4-header {
+    margin-top: -35%;
+  }
+
+  .mobile-icon {
     display: flex;
-    justify-content: center;
-	margin-top: .6rem;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 2%;
+  }
+
+  .main-nav a.icon {
+    display: block;
+  }
+
+  .main-nav ul li {
+    display: none;
+  }
+
+  .main-nav ul li:first-child {
+    display: flex;
+    flex: 45%;
+  }
+
+  .main-nav ul li:nth-child(3) {
+    display: flex;
+    flex: 50%;
+  }
+
+  .modal-header a img {
+    height: 40px;
+  }
+
+  .purchase-modal-body h3 {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  #purchase-modal .full-section {
+    flex-direction: column;
+  }
+
+.purchase-modal-body h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  }
+
+  .purchase-modal-body p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .purchase-modal-footer {
+    width: 80%;
+  }
+
+  /* Class-section */
+
+  .classes-content .classes-header h3 {
+    font-size: 1.5rem;
+  }
+
+  .classes-content .classes-header {
+    padding: 1% 5% 1% 5%;
+  }
+
+  .classes-content .classes-body {
+    background-image: url(http://garyp38.sg-host.com/wp-content/uploads/2023/01/d4-class-bg-mobile-background-001.webp);
+    background-position: initial;
+  }
+
+  /* World section */
+
+  .world-header p {
+    margin: 1% 5%;
+  }
+
+  .world-body .row {
+    flex-direction: column;
+  }
+
+  .world-footer {
+    flex-direction: column;
+  }
+
+  .world-footer .one-half-section {
+    width: 100%;
+  }
+
+  .world-body .column {
+    width: 100%;
+  }
+
+  .world-footer p {
+    padding: 1% 10%;
+  }
 }
 
-.footer-legal li{
-	font-size: .7rem;
-    line-height: .9rem;
-	text-align: left;
+/* Tablet media queries */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  /* Header */
+  #diablo-4-header {
+    margin-top: -15%;
+  }
+
+  .mobile-icon {
+    display: flex;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 2%;
+  }
+
+  .main-nav a.icon {
+    display: block;
+  }
+
+  .main-nav ul li {
+    display: none;
+  }
+
+  .main-nav ul li:first-child {
+    display: flex;
+    flex: 45%;
+  }
+
+  .main-nav ul li:nth-child(3) {
+    display: flex;
+    flex: 50%;
+  }
+
+  #purchase-modal .full-section {
+    flex-direction: column;
+  }
+
+  #purchase-modal .one-third-section h4 {
+    padding: 5% 0 5% 35%;
 }
 
-#esrb-policy{
-	display: block;
-    max-height: 97px;
-	margin-right: .5rem;
-	border-radius: 0;
+  /* World section */
+  .world-footer .one-half-section {
+    width: 100%;
+  }
+
+  .world-body .column {
+      width: 50%;
+  }
+
 }
 
-#esrb-mature{
-	display: block;
-    max-height: 97px;
-	margin-right: .5rem;
+/* Laptop media queries */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+
+  #diablo-4-nav .primary-nav ul li:nth-child(10) {
+    margin-left: 25%;
+  }
+
+  /* World section */
+  .world-footer {
+    padding: 2% 0% 2% 0%;
+  }
+
+  .world-footer .one-half-section {
+      width: 50%;
+  }
+
+  .world-body .column {
+      width: 25%;
+  }
+
 }
 
-/* Footer Mobile & Tablet media queries */
+/* Desktop media queries */
+@media only screen and (min-width: 1440px) {
+  
+}
