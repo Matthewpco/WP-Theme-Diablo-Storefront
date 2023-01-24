@@ -5,40 +5,7 @@
  */
 
 ?>
-<style>
-    .classes-content {
-        background-color: #000;
-    }
 
-    .classes-header {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        padding: 1% 30% 1% 30%;
-    }
-
-    .classes-header h2 {
-        font-size: 1.2rem;
-        font-family: 'Alegreya Sans';
-    }
-
-    .classes-header h3 {
-        font-size: 3rem;
-        font-family: 'Old Fenris';
-        padding-top: 0;
-    }
-
-    .classes-header p {
-        font-family: 'Alegreya Sans';
-        font-size: 1.2rem;
-    }
-
-    .classes-body {
-        background-image: url(http://garyp38.sg-host.com/wp-content/uploads/2023/01/d4-class-bg-desktop-background-001-scaled.webp);
-        background-position: center;
-        background-size: cover;
-    }
-</style>
 <div class="classes-content"><!-- Begin Class Section -->
     <div class="classes-header">
         <h2 class="color-brown">Classes</h2>
