@@ -874,96 +874,161 @@ input[type=range]:focus::-moz-range-thumb {
 
 /* Footer styles */
 
-footer .container {
-  padding: 2rem 0 0.5rem;
+.todo{
+	background-color: #232323; 
+	padding-left: 1%;
 }
-.footer-logo {
+
+#main-footer .container{
+  text-align: center;
+  background-color: #000;
+  color: #d2c8ae;
+}
+
+footer .container{
+	padding: 2rem .5rem;
+}
+/* Stay connected section Social*/
+.bliz-stay-connect h3{
+  font-family: "Old Fenris", serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.05;
+  text-transform: uppercase;
+  text-shadow: 3px 5px 5px rgb(0 0 0 / 50%);
+  color: #D2C8AE;
+  margin-top: 2rem;
+}
+
+.bliz-social-icons{
+  margin: 1.5rem 0 -.5rem;
+}
+
+.bliz-social-icons li:hover{
+  color: fff;
+}
+
+.bliz-social-icons ul{
   display: flex;
   justify-content: center;
-  margin: 0 0 -1rem;
+  align-content: center;
+  margin-bottom: 3rem;
 }
 
-.footer-nav {
-  margin: 2rem 0;
-  text-decoration: none;
+.bliz-social-icons li{
+  font-size: 2rem;
 }
 
-.footer-nav a {
-  color: #b0afab;
+.languages{
+  margin: 1rem 0;
 }
 
-.all-games {
-  margin: 2rem 0;
+/* Footer main area */
+
+/********* Remove to replace with Matthew's logo 
+Just needed for sizing *********/
+.footer-logo img{
+  max-height: 6rem;
+}
+/*****************************/
+
+.all-games{
+	margin: 2rem 0;
 }
 
-.all-games a {
-  color: #009dff;
+.all-games a{
+	color: #009dff;
 }
 
-.all-games p a:hover {
-  color: #00b5ff;
+.all-games p a:hover{
+	color: #00b5ff;
 }
 
-.copyright p {
-  margin: 1.5rem 0 0.5rem;
-  font-weight: lighter;
-  font-size: 0.8rem;
+.all-games p img{
+	display: inline;
+	margin-left: .2rem;
 }
 
-.copyright span {
-  font-weight: bold;
-  font-size: 0.8rem;
+.copyright p{
+	margin: 1.5rem 0 .4rem;
+	font-weight: lighter;
+	font-size: .8rem;
 }
 
-footer p {
-  font-size: 1rem;
+.copyright span{
+	font-weight: bold;
 }
 
-footer h6 {
-  margin-top: 0.5rem;
-
-  text-decoration: none;
+footer p{
+	font-size: 1rem;
 }
 
-footer h6 a {
-  color: #b0afab;
-  margin: 0 0.5rem;
+footer a{
+	color: #B0AFAB;
+	margin: 0 .5rem;
 }
 
-footer h5 a {
-  margin: 0 0.5rem;
+/* Both Footer Navigation Styles */
+.upper-nav-ul{
+	color: #B0AFAB;
+	margin: 1.9rem 0;
 }
 
-footer a:hover {
-  color: #fff;
+.upper-nav-ul li{
+	display: inline-block;
+	padding: 0;
+	font-size: 1rem;
 }
 
-footer .legal-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 0.6rem;
+.upper-nav-ul li a{
+	font-weight: 500;
 }
 
-.footer-legal li {
-  font-size: 0.7rem;
-  line-height: 0.9rem;
-  text-align: left;
+.lower-nav-ul{
+	color: #B0AFAB;
+	margin-bottom: 1.6rem;
 }
 
-#esrb-policy {
-  display: block;
-  max-height: 97px;
-  margin-right: 0.5rem;
-  border-radius: 0;
+.lower-nav-ul li{
+	display: inline-block;
+	padding: 0;
+	font-size: .7rem;
 }
 
-#esrb-mature {
-  display: block;
-  max-height: 97px;
-  margin-right: 0.5rem;
+.lower-nav-ul li a{
+	font-weight: 500;
 }
+
+footer a:hover{
+	color: #fff;
+}
+
+.legal-container{
+	display: flex;
+    display: flex;
+    justify-content: center;
+	margin-top: .6rem;
+}
+
+.footer-legal li{
+	font-size: .7rem;
+    line-height: .9rem;
+	text-align: left;
+}
+
+#esrb-policy{
+	display: block;
+    max-height: 97px;
+	margin-right: .5rem;
+	border-radius: 0;
+}
+
+#esrb-mature{
+	display: block;
+    max-height: 97px;
+	margin-right: .5rem;
+}
+
 
 /* Responsive media queries */
 
