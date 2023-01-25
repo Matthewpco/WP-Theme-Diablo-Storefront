@@ -934,10 +934,15 @@ footer .container{
   text-transform: uppercase;
   text-shadow: 3px 5px 5px rgb(0 0 0 / 50%);
   margin-top: 2rem;
+  color: #D2C8AE;
 }
 
 .bliz-social-icons{
   margin: 1.5rem 0 -.5rem;
+}
+
+.bliz-social-icons li{
+  color: #D2C8AE;
 }
 
 .bliz-social-icons li:hover{
