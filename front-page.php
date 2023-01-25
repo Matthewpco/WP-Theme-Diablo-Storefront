@@ -12,7 +12,9 @@
  *
  * @package storefront
  */
-
+if (is_front_page()) {
+	add_action('wp_enqueue_scripts', 'dequeue_parent_scripts', 100);
+}
 get_header(); ?>
 <!-- Begin front page -->
 <div id="d4s-front-page" class="">
