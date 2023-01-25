@@ -914,25 +914,25 @@ footer .container{
   font-size: 2rem;
 }
 
-.languages{
+footer .languages{
   margin: 1rem 0;
 }
 
 /* Footer main area */
 
-.all-games{
+footer .all-games{
 	margin: 2rem 0;
 }
 
-.all-games a{
+footer .all-games a{
 	color: #009dff;
 }
 
-.all-games p a:hover{
+footer .all-games p a:hover{
 	color: #00b5ff;
 }
 
-.all-games p img{
+footer.all-games p img{
 	display: inline;
 	margin-left: .2rem;
 }
