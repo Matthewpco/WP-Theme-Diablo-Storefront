@@ -917,10 +917,14 @@ input[type=range]:focus::-moz-range-thumb {
   color: #d2c8ae;
 }
 
+.footer-logo img{
+  width: 200px;
+}
+
 footer .container{
 	padding: 2rem .5rem;
 }
-/* Stay connected section Social*/
+/* Stay connected section - Social*/
 .bliz-stay-connect h3{
   font-family: "Old Fenris", serif;
   font-size: 2.2rem;
@@ -1053,6 +1057,7 @@ footer a:hover{
     max-height: 97px;
 	margin-right: .5rem;
 }
+
 
 /* Responsive media queries */
 
