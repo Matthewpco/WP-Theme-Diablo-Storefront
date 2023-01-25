@@ -36,11 +36,13 @@ get_header(); ?>
 	</main>
 </div><!-- End front page -->
 <?php
-// Output the class section.
+// Output the class section
 get_template_part('template-parts/class-section');
-// Output the world section.
+// Output the world section
 get_template_part('template-parts/world-section');
 // output the story section
 get_template_part('template-parts/story-section');
-// output the footer section.
+// output the news section
+get_template_part('template-parts/news-section');
+// output the footer section
 get_footer();
