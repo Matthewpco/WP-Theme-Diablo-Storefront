@@ -25,25 +25,10 @@
 				</ul>
 			</div>
 		</div>
-		<!-- Language Selector -->
-		<div>
-			<form class="languages">
-			<label for="language">Language:</label>
-			<select name="language" id="language">
-				<option value="volvo">English (US)</option>
-				<option value="volvo">English (UK)</option>
-				<option value="volvo">Japanese</option>
-				<option value="volvo">German</option>
-				<option value="volvo">Russian</option>
-				<option value="saab">Spanish</option>
-				<option value="opel">French</option>
-				<option value="audi">Chinese</option>
-			</select>
-			</form>
-		</div>
+
 			<!-- Footer logo -->							
 			<div class="footer-logo">
-				<a href="https://blizzard.com/"  target="_blank" ><img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/cropped-Blizzard_Entertainment_Logo-e1672944594113-1-e1673155978548.webp" alt="logo"></a>
+				<a href="https://blizzard.com/"  target="_blank" ><img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/61fae8ba95e6ca00047b4f2b-e1673655719865.png" alt="logo"></a>
 			</div>
 			<div class="top-nav">
 				<nav>
