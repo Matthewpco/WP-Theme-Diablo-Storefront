@@ -89,4 +89,11 @@ function dequeue_parent_scripts()
     wp_dequeue_script('js-cookie');
     wp_dequeue_script('woocommerce');
 }
-add_action('wp_enqueue_scripts', 'dequeue_parent_scripts', 100);
+
+function console_log(...$data)
+{
+    $json = json_encode($data);
+    add_action('shutdown', function () use ($json) {
+        echo "<script>console.log({$json})</script>";
+    });
+}

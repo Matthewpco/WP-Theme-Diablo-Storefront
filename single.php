@@ -1,31 +1,41 @@
 <?php
+
 /**
  * The template for displaying all single posts.
  *
  * @package storefront
  */
 
-get_header(); ?>
+get_header();
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+
+?>
+<style>
+	.blog-content {
+		width: 100%;
+		padding: 5% 15% 5% 15%;
+	}
+
+	.blog-content p,
+	.blog-content h2,
+	.blog-content h3 {
+		color: #878582;
+	}
+</style>
+<div id="primary" class="content-area blog-content center">
+	<main id="main" class="site-main" role="main">
 
 		<?php
-		while ( have_posts() ) :
+		while (have_posts()) :
 			the_post();
 
-			do_action( 'storefront_single_post_before' );
-
-			get_template_part( 'content', 'single' );
-
-			do_action( 'storefront_single_post_after' );
+			get_template_part('content', 'single');
 
 		endwhile; // End of the loop.
 		?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php
-do_action( 'storefront_sidebar' );
 get_footer();

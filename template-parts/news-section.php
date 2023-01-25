@@ -10,12 +10,7 @@
  */
 
 ?>
-<style>
-    .news-content {
-        background-color: #000;
-    }
-</style>
-<!-- Begin front page -->
+<!-- Begin News template -->
 <div class="news-content">
     <div class="news-header">
         <h2 class="color-brown alegreya-sans center" style="padding-top: 1%;">NEWS</h2>
@@ -24,10 +19,33 @@
     </div>
 
     <div class="news-body row">
-        loop
+
+        <?php
+        if (have_posts()) :
+            while (have_posts()) : the_post();
+
+        ?>
+
+                <div class="one-quarter-section center">
+                    <a href="https://news.blizzard.com/en-us/diablo4"><img src="<?php the_post_thumbnail() ?>" /></a>
+                    <div class="news-title center">
+                        <a href="https://news.blizzard.com/en-us/diablo4">
+                            <h3 class="color-tan center exocet-blizzard size-text">
+                                <?php the_title(); ?>
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+
+        <?php
+
+            endwhile;
+        endif;
+        ?>
+
     </div>
 
     <div class="news-footer center">
-        <button class="color-beige cursor">VIEW ALL</button>
+        <a href="https://news.blizzard.com/en-us/diablo4"><button class="color-beige cursor">VIEW ALL</button></a>
     </div>
-</div><!-- End front page -->
+</div><!-- End News template -->

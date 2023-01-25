@@ -733,10 +733,6 @@ ol, ul {
   display: none;
 }
 
-.cursor {
-  cursor: pointer;
-}
-
 /* Next & previous buttons */
 .world-content .prev,
 .world-content .next {
@@ -1027,6 +1023,47 @@ input[type=range]:focus::-moz-range-thumb {
   padding: 5% 30% 5% 0;
 }
 
+/* News section */
+.news-content {
+        background-color: #000;
+    }
+	.news-content .row {
+		display: flex;
+		margin: 0 10% 0 10%;
+		justify-content: center;
+	}
+	.news-content .one-quarter-section {
+		width: 25%;
+		padding: 3% 2% 3% 2%;
+	}
+	.news-content .one-quarter-section img {
+		width: 320px;
+		height: 180px;
+	}
+	.news-title {
+		background-image: url(/wp-content/uploads/2023/01/leather-texture_800.jpg);
+		padding: 5% 0% 10% 0%;
+		margin-top: -10%;
+		width: 320px;
+		background-size: contain;
+	}
+
+	.news-footer button {
+		  background-color: #28130D;
+		  font-family: 'Exocet Blizzard';
+		  border: 1px solid #737064;
+		  border-radius: 8px;
+		  font-size: 1.3rem;
+		  transition: .4s;
+		  padding: 20px 30px 20px 30px;
+		  margin-top: 3%;
+	}
+
+	.news-footer button:hover {
+		  background-color: #471D09;
+		  color: #e5e0c8;
+		  border: 1px solid #898678;
+	}
 /* Footer styles */
 
 #main-footer .container{
@@ -1035,10 +1072,14 @@ input[type=range]:focus::-moz-range-thumb {
   color: #d2c8ae;
 }
 
+.footer-logo img{
+  width: 200px;
+}
+
 footer .container{
 	padding: 2rem .5rem;
 }
-/* Stay connected section Social*/
+/* Stay connected section - Social*/
 .bliz-stay-connect h3{
   font-family: "Old Fenris", serif;
   font-size: 2.2rem;
@@ -1341,6 +1382,21 @@ footer a:hover{
   .story-trailer-modal {
     padding-top: 12px;
   }
+	
+	/* News section */
+		.news-content .row {
+		display: flex;
+		margin: 0 5% 0 5%;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	
+	.news-content .one-quarter-section {
+    display: flex;
+    width: 100%;
+    padding: 3% 2% 3% 2%;
+    flex-direction: column;
+}
   
 }
 
@@ -1425,6 +1481,21 @@ footer a:hover{
   .story-footer p {
       padding: 5%;
   }
+	
+	/* News section */
+	.news-content .row {
+		display: flex;
+		margin: 0 5% 0 5%;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	
+	.news-content .one-quarter-section {
+    display: flex;
+    width: 45%;
+    padding: 3% 2% 3% 2%;
+    flex-direction: column;
+}
 
 }
 
@@ -1455,6 +1526,21 @@ footer a:hover{
     width: 640px;
     height: 360px;
   }
+	
+	/* News section */
+	.news-content .row {
+		display: flex;
+		margin: 0 10% 0 10%;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	
+	.news-content .one-quarter-section {
+		display: flex;
+		width: 40%;
+		padding: 3% 2% 3% 2%;
+		flex-direction: column;
+	}
 
 }
 
