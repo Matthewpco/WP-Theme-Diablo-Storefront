@@ -4,14 +4,12 @@
 /**
  * The template for displaying the footer.
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- * @package Storefront
- * @subpackage Diablo_4_Storefront_Child
- * @since Diablo 4 Storefront Child 1.0
+ * Contains the closing of the #content div and all content after
+ *
+ * @package storefront
  */
 
 ?>
-
 <!-- Begin footer section -->
 	<footer id="main-footer"  role="contentinfo">
 		<div class="container">
@@ -89,6 +87,5 @@
 		</div>
     </footer><!-- End footer section -->
     <?php wp_footer(); ?>
-
-  </body>
+    </body>
 </html>
