@@ -5,8 +5,8 @@
  */
 
 ?>
-
-<div class="world-content row"><!-- Begin World Section -->
+<!-- Begin World Section -->
+<div id="world" class="world-content row">
     <div class="world-header">
         <h2 class="color-brown">World</h3>
             <h3 class="color-tan">EXPLORE SANCTUARY</h3>
@@ -189,9 +189,7 @@
                         <img class="demo cursor" src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/World12-Kehjistan-Large.webp" style="width:100%" onclick="currentSlide(12)" alt="Northern Lights">
                     </div>
                 </div>
-
                 -->
-
             </div>
         </div>
     </div>
@@ -219,64 +217,5 @@
             <p class="color-gray">Battles take a turn when you enter PvP zones. Mark yourself as “hostile” and these high-risk, high-reward areas of Sanctuary allow you to take a swing at other players for their valuable loot. But be warned. This also opens you up to being swung at.
             </p>
         </div>
-
     </div>
 </div><!-- End World Section -->
-
-<script>
-    // Assignment
-    var viewAllBtn = document.querySelector("#world-view-btn");
-    var viewAllDiv = document.querySelector("#view-more-div");
-    var divisor = document.getElementById("world-divisor");
-    var slider = document.getElementById("world-slider");
-    // Functions
-    function openWorldModal() {
-        document.getElementById("world-modal").style.display = "block";
-    }
-
-    function closeWorldModal() {
-        document.getElementById("world-modal").style.display = "none";
-    }
-
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("worldSlides");
-        var dots = document.getElementsByClassName("demo");
-        var captionText = document.getElementById("caption");
-        if (n > slides.length) {
-            slideIndex = 1
-        }
-        if (n < 1) {
-            slideIndex = slides.length
-        }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        captionText.innerHTML = dots[slideIndex - 1].alt;
-    }
-
-    function viewAll() {
-        viewAllDiv.classList.add("row")
-        viewAllBtn.classList.add("hidden")
-    }
-
-    function moveDivisor() {
-        divisor.style.width = slider.value + "%";
-    }
-</script>

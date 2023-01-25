@@ -1,5 +1,19 @@
-<!-- Footer content begin -->
-<footer id="main-footer"  role="contentinfo">	
+
+<?php
+
+/**
+ * The template for displaying the footer.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * @package Storefront
+ * @subpackage Diablo_4_Storefront_Child
+ * @since Diablo 4 Storefront Child 1.0
+ */
+
+?>
+
+<!-- Begin footer section -->
+	<footer id="main-footer"  role="contentinfo">
 		<div class="container">
 		<!-- Social Media Section -->
 		<div class="bliz-stay-connect">
@@ -73,9 +87,8 @@
 				</div>
 			</div>
 		</div>
-	</footer>
-<!-- #footer -->
-<!-- #full-page -->
-<?php wp_footer(); ?>
-</body>
+    </footer><!-- End footer section -->
+    <?php wp_footer(); ?>
+
+  </body>
 </html>

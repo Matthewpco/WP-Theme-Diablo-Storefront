@@ -14,7 +14,7 @@
  */
 
 get_header(); ?>
-
+<!-- Begin front page -->
 <div id="d4s-front-page" class="">
 	<main id="d4s-main" role="main">
 		<!-- The video -->
@@ -33,12 +33,14 @@ get_header(); ?>
 
 
 		</div>
-	</main><!-- #main -->
-</div><!-- #front-page -->
+	</main>
+</div><!-- End front page -->
 <?php
 // Output the class section.
 get_template_part('template-parts/class-section');
 // Output the world section.
 get_template_part('template-parts/world-section');
+// output the story section
+get_template_part('template-parts/story-section');
 // output the footer section.
 get_footer();
