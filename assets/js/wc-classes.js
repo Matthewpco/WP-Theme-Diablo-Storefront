@@ -183,7 +183,7 @@ export class d4sClasses extends LitElement {
             <div id="dropdown-content-4" class="hidden">
             <img id="mob-img-4" class="wc-img hidden" src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/d4-class-bg-parallax-mobile-rogue-001.webp" />
                 <p class="color-gray">The Rogue is an adaptable, agile warrior who can specialize in ranged or close quarters combat. She can best any foe with her imbued weapons, perform powerful combo attacks, and can augment her arsenal with deadly poisons and shadow magic to slay demons with impunity.</p>
-                <iframe width="480" height="270"  src="https://www.youtube.com/embed/LvrLZ4yETHI" title="Diablo IV - Rogue Announce Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="480" height="270" src="https://www.youtube.com/embed/LvrLZ4yETHI" title="Diablo IV - Rogue Announce Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
 
             <div class="row" id="dropdown-toggle-5" @click=${this.showSorcerer}>

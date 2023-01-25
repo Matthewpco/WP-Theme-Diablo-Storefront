@@ -33,6 +33,7 @@ function d4s_enqueue_scripts()
     wp_enqueue_script('purchase-modal', get_stylesheet_directory_uri() . '/assets/js/purchase-modal.js', array(), true);
     wp_enqueue_script('wc-classes', get_stylesheet_directory_uri() . '/assets/js/wc-classes.js', array(), true);
     wp_enqueue_script('world-section', get_stylesheet_directory_uri() . '/assets/js/world-section.js', array(), true);
+    wp_enqueue_script('story-section', get_stylesheet_directory_uri() . '/assets/js/story-section.js', array(), true);
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap', false);
     wp_enqueue_style('fa',  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
 }
@@ -44,6 +45,8 @@ function d4s_defer_scripts($tag, $handle, $src)
     $defer = array(
         'mobile-menu-modal',
         'purchase-modal',
+        'world-section',
+        'story-section',
 
     );
     if (in_array($handle, $defer)) {

@@ -1,20 +1,17 @@
 <?php
+
 /**
  * The template for displaying the footer.
  *
- * Contains the closing of the #content div and all content after
- *
- * @package storefront
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * @package Storefront
+ * @subpackage Diablo_4_Storefront_Child
+ * @since Diablo 4 Storefront Child 1.0
  */
 
 ?>
 
-
-<!--	<div class="">
-			TODO Reese feature: D4S-2 <a href="https://www.notion.so/D4S-2-1d546517eefb49afaf8ab4ad8ac1c5de">Notion task link</a>
-	</div>	
--->
-<!-- Footer content begin -->
+<!-- Begin footer section -->
 	<footer id="main-footer"  role="contentinfo">
 		<div class="container" style="text-align: center; background: #000; color: #B0AFAB;">
 
@@ -66,13 +63,9 @@
 					</ul>
 				</div>
 			</div>
-			
 		<div>
-	</footer>
-<!-- #footer -->
-<!-- #full-page -->
+    </footer><!-- End footer section -->
+    <?php wp_footer(); ?>
 
-<?php wp_footer(); ?>
-
-</body>
+  </body>
 </html>

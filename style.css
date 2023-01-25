@@ -56,6 +56,28 @@ ol, ul {
 .one-half-section {
   width: 50%;
 }
+
+.two-thirds-section {
+  width: 66.6%;
+}
+
+.one-third-section {
+  width: 33.3%;
+}
+
+.row {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+
 /* fonts:
 ================================================================================= */
 
@@ -66,7 +88,9 @@ ol, ul {
   font-style: "normal";
   src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt095210837aa1e0f0/625005917f50a04889644422/AlegreyaSans-Regular.ttf");
 }
-
+.alegreya-sans {
+  font-family: 'Alegreya Sans';
+}
 @font-face {
   font-family: "Alegreya Sans";
   font-weight: 300;
@@ -80,7 +104,6 @@ ol, ul {
   font-display: swap;
   src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltcb28d02e46f1735f/6250059188b34525a18e655f/AlegreyaSans-Bold.ttf");
 }
-
 /* Exocet Blizzard */
 @font-face {
   font-family: "Exocet Blizzard";
@@ -88,13 +111,18 @@ ol, ul {
   font-display: swap;
   src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltc480ac92a523b007/627b28039c0ad045adc48481/ExocetBlizzardOT-Medium.ttf");
 }
-
+.exocet-blizzard {
+  font-family: 'Exocet Blizzard';
+}
 /* Old Fenris */
 @font-face {
   font-family: "Old Fenris";
   font-weight: normal;
   font-display: swap;
   src: url("https://assets.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt87dbca38eae7d12d/625007b988b34525a18e6563/OldFenris-Regular.otf");
+}
+.old-fenris {
+  font-family: 'Old Fenris';
 }
 /* Colors */
 
@@ -116,6 +144,21 @@ ol, ul {
 
 .color-tan {
   color: #d2c8ae;
+}
+
+/* Font Sizes */
+
+.size-small {
+  font-size: .8rem;
+}
+.size-text {
+  font-size: 1.2rem;
+}
+.size-large {
+  font-size: 2rem;
+}
+.size-xl {
+  font-size: 2.5rem;
 }
 
 /* Header and Nav styles  */
@@ -217,18 +260,12 @@ ol, ul {
 
 /* Template Styles */
 
-.row {
-  display: flex;
-}
+
 
 .overview-sub-section {
   background-image: url(https://blz-contentstack-images.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blt903e10b7d3772801/6250b7d337d89b0f2fecca8b/leather-texture_800.jpg?format=webply&quality=80);
   background-size: 550px;
   background-repeat: repeat;
-}
-
-.hidden {
-  display: none;
 }
 
 /* The Mobile Modal /modal-menu */
@@ -1011,11 +1048,15 @@ footer .legal-container {
 
   #purchase-modal .full-section {
     flex-direction: column;
+    align-items: center;
+  }
+  #purchase-modal .full-section .one-third-section {
+    width: 100%;
   }
 
-.purchase-modal-body h2 {
-  text-align: center;
-  font-size: 1.5rem;
+  .purchase-modal-body h2 {
+    text-align: center;
+    font-size: 1.5rem;
   }
 
   .purchase-modal-body p {
@@ -1023,12 +1064,18 @@ footer .legal-container {
     text-align: center;
   }
 
+  .purchase-modal-body img {
+    width: 50%;
+  }
+
   .purchase-modal-footer {
     width: 80%;
   }
 
   /* Class-section */
-
+  .classes-content {
+    padding-top: 5%;
+  }
   .classes-content .classes-header h3 {
     font-size: 1.5rem;
   }
@@ -1043,10 +1090,14 @@ footer .legal-container {
   }
 
   /* World section */
+  .world-header h3 {
+    font-size: 1.5rem;
+  }
 
   .world-header p {
     margin: 1% 5%;
   }
+  
 
   .world-body .row {
     flex-direction: column;
@@ -1067,6 +1118,12 @@ footer .legal-container {
   .world-footer p {
     padding: 1% 10%;
   }
+
+  /* Story section */
+  .story-content {
+    padding-top: 5%;
+  }
+  
 }
 
 /* Tablet media queries */
@@ -1104,6 +1161,8 @@ footer .legal-container {
 
   #purchase-modal .full-section {
     flex-direction: column;
+    align-items: center;
+
   }
 
   #purchase-modal .one-third-section h4 {
@@ -1111,6 +1170,8 @@ footer .legal-container {
 }
 
   /* World section */
+
+  
   .world-footer .one-half-section {
     width: 100%;
   }
@@ -1124,6 +1185,7 @@ footer .legal-container {
 /* Laptop media queries */
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
 
+  /* Header section */
   #diablo-4-nav .primary-nav ul li:nth-child(10) {
     margin-left: 25%;
   }
