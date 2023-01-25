@@ -914,7 +914,7 @@ input[type=range]:focus::-moz-range-thumb {
 #main-footer .container{
   text-align: center;
   background-color: #000;
-  color: #d2c8ae;
+  color: #b3b3b3;
 }
 
 .footer-logo img{
@@ -923,6 +923,7 @@ input[type=range]:focus::-moz-range-thumb {
 
 footer .container{
 	padding: 2rem .5rem;
+  color: #b3b3b3;
 }
 /* Stay connected section - Social*/
 .bliz-stay-connect h3{
@@ -932,7 +933,6 @@ footer .container{
   line-height: 1.05;
   text-transform: uppercase;
   text-shadow: 3px 5px 5px rgb(0 0 0 / 50%);
-  color: #D2C8AE;
   margin-top: 2rem;
 }
 
@@ -980,9 +980,8 @@ footer.all-games p img{
 
 .copyright p{
 	margin: 1.5rem 0 .4rem;
-	font-weight: lighter;
+	font-weight: 100;
 	font-size: .8rem;
-  color: #b3b3b3;
 }
 
 .copyright span{
@@ -994,13 +993,13 @@ footer p{
 }
 
 footer a{
-	color: #B0AFAB;
+	color: #b3b3b3;
 	margin: 0 .5rem;
 }
 
 /* Both Footer Navigation Styles */
 .upper-nav-ul{
-	color: #B0AFAB;
+	color: #b3b3b3;
 	margin: 1.9rem 0;
 }
 
@@ -1015,7 +1014,7 @@ footer a{
 }
 
 .lower-nav-ul{
-	color: #B0AFAB;
+	color: #b3b3b3;
 	margin-bottom: 1.6rem;
 }
 
@@ -1042,7 +1041,7 @@ footer a:hover{
 
 .footer-legal li{
 	font-size: .7rem;
-    line-height: .9rem;
+  line-height: .9rem;
 	text-align: left;
 }
 
@@ -1058,7 +1057,6 @@ footer a:hover{
     max-height: 97px;
 	margin-right: .5rem;
 }
-
 
 /* Responsive media queries */
 
