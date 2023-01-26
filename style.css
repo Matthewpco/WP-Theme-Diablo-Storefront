@@ -67,6 +67,12 @@ ol, ul {
 
 .row {
   display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
 .hidden {
@@ -157,6 +163,9 @@ ol, ul {
 }
 .size-text {
   font-size: 1.2rem;
+}
+.size-med {
+  font-size: 1.5rem;
 }
 .size-large {
   font-size: 2rem;
@@ -684,7 +693,7 @@ ol, ul {
   padding: 6px 6px;
 }
 
-.column {
+.world-content .column {
   width: 25%;
 }
 
