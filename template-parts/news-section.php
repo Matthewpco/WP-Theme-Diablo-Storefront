@@ -10,6 +10,7 @@
  */
 
 ?>
+
 <!-- Begin News template -->
 <div class="news-content">
     <div class="news-header">
