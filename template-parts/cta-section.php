@@ -108,7 +108,7 @@
     </div>
 
     <div class="cta-footer column center">
-        <a href="https://news.blizzard.com/en-us/diablo4"><button id="nav-pre-purchase" class="color-beige cursor">PRE-PURCHASE</button></a>
+        <button id="menu-item-85" class="color-beige cursor">PRE-PURCHASE</button>
         <p>*Actual platform availability and launch date(s) of the Beta subject to change. See Diablo.com for more details. Minimum Open Beta duration is 2 days. Limited time only. Internet connection required.</p>
         <p>**Downloaded separately. Availability varies by platform and region. Diablo® III, Diablo Immortal™ and World of Warcraft® sold separately.</p>
         <p>***Up to 4 days based on estimated access; actual play time subject to possible outages and applicable time zone differences.</p>
