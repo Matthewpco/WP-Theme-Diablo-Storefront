@@ -17,7 +17,18 @@ purchaseBtn[1].onclick = function() {
     purchaseModal.style.display = "flex";
 }
 
+// When the user clicks the overview section button, open the modal 
+purchaseBtn[2].onclick = function() {
+    purchaseModal.style.display = "flex";
+}
+
+// When the user clicks the cta section button, open the modal 
+purchaseBtn[3].onclick = function() {
+    purchaseModal.style.display = "flex";
+}
+
 // When the user clicks on <span> (x), close the modal
 purchaseSpan.onclick = function() {
     purchaseModal.style.display = "none";
 }
+
