@@ -602,7 +602,6 @@ ul {
   position: relative;
   text-align: center;
   color: #dc0000;
-  padding: 10% 5%;
 }
 .overview-content .caption img{
   width: 500px;
@@ -651,6 +650,7 @@ ul {
 
 .classes-content {
   background-color: #000;
+  padding-top: 10%;
 }
 
 .classes-header {
@@ -1403,7 +1403,7 @@ input[type="range"]:focus::-moz-range-thumb {
   /* Overview Section */
       
   .overview-content .video-container .caption {
-    padding: 40% 0;
+    padding: 0;
   }
 
   .overview-content .caption img{
@@ -1584,7 +1584,7 @@ input[type="range"]:focus::-moz-range-thumb {
   /* Overview Section */
     
   .overview-content .video-container .caption {
-    padding: 10% 0;
+    padding: 0;
   }
 
   .overview-content .caption img{
