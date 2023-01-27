@@ -97,5 +97,28 @@ function console_log(...$data)
         echo "<script>console.log({$json})</script>";
     });
 }
+function d4s_theme_config()
+{
 
-add_theme_support('woocommerce');
+    add_theme_support('woocommerce', array(
+        'thumbnail_image_width'     => 255,
+        'single_image_width'        => 255,
+        'product_grid'              => array(
+            'default_rows'      => 10,
+            'min_rows'          => 3,
+            'max_rows'          => 10,
+            'default_columns'   => 3,
+            'min_columns'       => 1,
+            'max_columns'       => 4,
+        )
+    ));
+    add_theme_support('wc-product-gallery-zoom');
+    add_theme_support('wc-product-gallery-lightbox');
+    add_theme_support('wc-product-gallery-slider');
+
+    if (!isset($content_width)) {
+        $content_width = 600;
+    }
+}
+
+add_action('after_setup_theme', 'd4s_theme_config', 0);

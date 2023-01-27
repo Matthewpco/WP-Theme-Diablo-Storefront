@@ -89,6 +89,15 @@ ul {
   align-items: center;
 }
 
+.size-auto, 
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto;
+}
+
 /* fonts:
 ================================================================================= */
 
@@ -168,7 +177,7 @@ ul {
 .size-med {
   font-size: 1.5rem;
 }
-.size-large {
+.size-lrg {
   font-size: 2rem;
 }
 .size-xl {
@@ -574,6 +583,7 @@ ul {
   padding: 5% 0 5% 0;
   color: rgba(255, 255, 255, 0.3);
 }
+
 
 /* Overview Section */
      
@@ -1400,6 +1410,7 @@ input[type="range"]:focus::-moz-range-thumb {
     width: 80%;
   }
 
+
   /* Overview Section */
       
   .overview-content .video-container .caption {
@@ -1593,7 +1604,7 @@ input[type="range"]:focus::-moz-range-thumb {
   .overview-content  .caption h2{
       padding: 1% 0;
   }
-  
+
   /* World section */
 
   .world-footer .one-half-section {
