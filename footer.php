@@ -10,8 +10,8 @@
 
 ?>
 <!-- Begin footer section -->
-<footer id="main-footer" role="contentinfo">
-	<div class="container">
+<footer id="d4s-footer">
+	<div class="d4s-container">
 		<!-- Social Media Section -->
 		<div class="bliz-stay-connect">
 			<h3>Stay Connected</h3>
@@ -29,7 +29,8 @@
 		<div class="footer-logo">
 			<a href="https://blizzard.com/" target="_blank"><img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/61fae8ba95e6ca00047b4f2b-e1673655719865.png" alt="logo"></a>
 		</div>
-		<div class="top-nav">
+
+		<div class="d4s-top-nav">
 			<nav>
 				<ul class="upper-nav-ul">
 					<li><a href="https://careers.blizzard.com/">CAREERS</a> | </li>
@@ -41,11 +42,13 @@
 				</ul>
 			</nav>
 		</div>
-		<div class="all-games">
+
+		<div class="d4s-all-games">
 			<p>All games, one app: <a href="https://www.blizzard.com/apps/battle.net/desktop"><img src="http://diablo41.local/wp-content/uploads/2023/01/ezgif.com-gif-maker.webp"> Battle.net Desktop App</a>
 			</p>
 		</div>
-		<div class="copyright">
+
+		<div class="d4s-copyright">
 			<p>&copy 2023 BLIZZARD ENTERTAINMENT, INC. ALL RIGHTS RESERVED.<br>All <span>trademarks</span> referenced herin are the properties of thier respective owners.<br><span>Do not sell or share my personal information</span></p>
 			<nav>
 				<ul class="lower-nav-ul">
@@ -57,7 +60,8 @@
 				</ul>
 			</nav>
 		</div>
-		<div class="footer-legal">
+
+		<div class="d4s-footer-legal">
 			<div class="legal-container">
 				<img id="esrb-policy" src="/wp-content/uploads/2023/01/esrb.webp" alt="esrb-policy">
 				<img id="esrb-mature" src="http://diablo41.local/wp-content/uploads/2023/01/m.1BK7T.webp" alt="ESRB-mature">
@@ -68,6 +72,7 @@
 				</ul>
 			</div>
 		</div>
+
 	</div>
 </footer><!-- End footer section -->
 <?php wp_footer(); ?>

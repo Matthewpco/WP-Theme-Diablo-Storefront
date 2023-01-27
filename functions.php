@@ -97,3 +97,5 @@ function console_log(...$data)
         echo "<script>console.log({$json})</script>";
     });
 }
+
+add_theme_support('woocommerce');
