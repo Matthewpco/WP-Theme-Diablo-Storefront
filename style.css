@@ -636,7 +636,7 @@ ul {
   border-radius: 8px;
   font-size: 1.25rem;
   transition: .4s;
-  padding: 15px 30px 15px 30px;
+  padding: 20px 30px 20px 30px;
   margin-top: 3%;
   filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.66));
 }
