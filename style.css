@@ -183,7 +183,7 @@ ul {
   position: sticky;
   top: 0;
   margin-top: -10%;
-  z-index: 1;
+  z-index: 5;
 }
 
 #diablo-4-nav {
@@ -286,7 +286,7 @@ ul {
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 10;
   /* Sit on top */
   margin-right: 50%;
   /* Location of the box */
@@ -424,7 +424,7 @@ ul {
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 10;
   /* Sit on top */
   left: 0;
   top: 0;
@@ -697,7 +697,7 @@ ul {
 .world-modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   padding-top: 100px;
   left: 0;
   top: 0;
@@ -974,7 +974,7 @@ input[type="range"]:focus::-moz-range-thumb {
 .story-trailer-modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   padding-top: 100px;
   left: 0;
   top: 0;
@@ -1112,7 +1112,7 @@ input[type="range"]:focus::-moz-range-thumb {
 
 /* Footer styles */
 
-#main-footer .container {
+#d4s-footer .d4s-container {
   text-align: center;
   background-color: #000;
   color: #d2c8ae;
@@ -1122,7 +1122,7 @@ input[type="range"]:focus::-moz-range-thumb {
   width: 200px;
 }
 
-footer .container {
+#d4s-footer .d4s-container {
   padding: 2rem 0.5rem;
 }
 /* Stay connected section - Social*/
@@ -1156,44 +1156,44 @@ footer .container {
   font-size: 2rem;
 }
 
-footer .languages {
+#d4s-footer .languages {
   margin: 1rem 0;
 }
 
 /* Footer main area */
 
-footer .all-games {
+#d4s-footer .d4s-all-games {
   margin: 2rem 0;
 }
 
-footer .all-games a {
+#d4s-footer .d4s-all-games a {
   color: #009dff;
 }
 
-footer .all-games p a:hover {
+#d4s-footer .d4s-all-games p a:hover {
   color: #00b5ff;
 }
 
-footer.all-games p img {
+#d4s-footer .d4s-all-games p img {
   display: inline;
   margin-left: 0.2rem;
 }
 
-.copyright p {
+.d4s-copyright p {
   margin: 1.5rem 0 0.4rem;
   font-weight: lighter;
   font-size: 0.8rem;
 }
 
-.copyright span {
+.d4s-copyright span {
   font-weight: bold;
 }
 
-footer p {
+#d4s-footer p {
   font-size: 1rem;
 }
 
-footer a {
+#d4s-footer a {
   color: #b0afab;
   margin: 0 0.5rem;
 }
@@ -1229,7 +1229,7 @@ footer a {
   font-weight: 500;
 }
 
-footer a:hover {
+#d4s-footer a:hover {
   color: #fff;
 }
 
