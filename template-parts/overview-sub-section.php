@@ -10,24 +10,6 @@
  */
 
 ?>
-<style>
-	.overview-sub-content {
-		background-image: url(/wp-content/uploads/2023/01/leather-texture_800.jpg);
-		background-color: #000;
-		padding: 5%;
-	}
-	
-	.overview-sub-body-left {
-		width: 60%;
-	}
-	
-	.overview-sub-body-right {
-		width: 40%;
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-	}
-</style>
 <!-- Begin Overview sub-section template -->
 <div class="overview-sub-content row">
 
