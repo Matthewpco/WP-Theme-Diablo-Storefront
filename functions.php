@@ -23,21 +23,26 @@ function sf_child_theme_dequeue_style()
 /**
  * Note: DO NOT! alter or remove the code above this text and only add your custom PHP functions below this text.
  */
+//Enqueue fonts and icons for site
+
+add_action( 'wp_enqueue_scripts', 'd4s_enqueue_fonts' );
+function d4s_enqueue_fonts() {
+	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap', false);
+    wp_enqueue_style('fa',  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+}
 
 /**
- * Enqueue a script
+ * Enqueue a script , add actions are in header, functions are here.
  */
+
 function d4s_enqueue_scripts()
 {
-    wp_enqueue_script('mobile-menu-modal', get_stylesheet_directory_uri() . '/assets/js/mobile-menu-modal.js', array(), true);
+	wp_enqueue_script('mobile-menu-modal', get_stylesheet_directory_uri() . '/assets/js/mobile-menu-modal.js', array(), true);
     wp_enqueue_script('purchase-modal', get_stylesheet_directory_uri() . '/assets/js/purchase-modal.js', array(), true);
     wp_enqueue_script('wc-classes', get_stylesheet_directory_uri() . '/assets/js/wc-classes.js', array(), true);
     wp_enqueue_script('world-section', get_stylesheet_directory_uri() . '/assets/js/world-section.js', array(), true);
     wp_enqueue_script('story-section', get_stylesheet_directory_uri() . '/assets/js/story-section.js', array(), true);
-    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap', false);
-    wp_enqueue_style('fa',  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
 }
-add_action('wp_enqueue_scripts', 'd4s_enqueue_scripts');
 
 // Meant for scripts that need to be deferred to work properly
 function d4s_defer_scripts($tag, $handle, $src)
@@ -54,7 +59,6 @@ function d4s_defer_scripts($tag, $handle, $src)
     }
     return $tag;
 }
-add_filter('script_loader_tag', 'd4s_defer_scripts', 10, 3);
 
 function d4s_export_scripts($tag, $handle, $src)
 {
@@ -66,7 +70,7 @@ function d4s_export_scripts($tag, $handle, $src)
     }
     return $tag;
 }
-add_filter('script_loader_tag', 'd4s_export_scripts', 10, 3);
+
 
 function dequeue_parent_scripts()
 {
@@ -97,6 +101,7 @@ function console_log(...$data)
         echo "<script>console.log({$json})</script>";
     });
 }
+
 function d4s_theme_config()
 {
 
@@ -115,10 +120,14 @@ function d4s_theme_config()
     add_theme_support('wc-product-gallery-zoom');
     add_theme_support('wc-product-gallery-lightbox');
     add_theme_support('wc-product-gallery-slider');
-
+https://garyp38.sg-host.com/wp-admin/theme-editor.php?file=woocommerce%2Fsingle-product.php&theme=diablo-4-storefront-child
     if (!isset($content_width)) {
         $content_width = 600;
     }
 }
 
 add_action('after_setup_theme', 'd4s_theme_config', 0);
+//Setup custom D4S woocommerce configurations
+require( 'woocommerce/config/shop-header.php' );
+require( 'woocommerce/config/shop-archive.php' );
+require( 'woocommerce/config/shop-single.php' );
