@@ -12,7 +12,7 @@
 ?>
 
 <!-- Begin News template -->
-<div class="news-content">
+<div id="news" class="news-content">
     <div class="news-header">
         <h2 class="color-brown alegreya-sans center" style="padding-top: 1%;">NEWS</h2>
         <h3 class="color-tan size-xl old-fenris center">DEVELOPER UPDATES</h3>

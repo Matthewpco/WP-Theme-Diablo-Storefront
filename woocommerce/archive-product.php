@@ -45,7 +45,7 @@ do_action('woocommerce_before_main_content');
 	do_action('woocommerce_archive_description');
 	?>
 </header>
-<div class="gear-archive" style="background-color: magenta; min-height: 100px;">
+
 	<?php
 	if (woocommerce_product_loop()) {
 
@@ -89,9 +89,7 @@ do_action('woocommerce_before_main_content');
 		 */
 		do_action('woocommerce_no_products_found');
 	}
-	?>
-</div>
-<?php
+
 /**
  * Hook: woocommerce_after_main_content.
  *

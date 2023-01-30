@@ -120,7 +120,7 @@ function d4s_theme_config()
     add_theme_support('wc-product-gallery-zoom');
     add_theme_support('wc-product-gallery-lightbox');
     add_theme_support('wc-product-gallery-slider');
-https://garyp38.sg-host.com/wp-admin/theme-editor.php?file=woocommerce%2Fsingle-product.php&theme=diablo-4-storefront-child
+
     if (!isset($content_width)) {
         $content_width = 600;
     }
@@ -128,6 +128,7 @@ https://garyp38.sg-host.com/wp-admin/theme-editor.php?file=woocommerce%2Fsingle-
 
 add_action('after_setup_theme', 'd4s_theme_config', 0);
 //Setup custom D4S woocommerce configurations
-require( 'woocommerce/config/shop-header.php' );
-require( 'woocommerce/config/shop-archive.php' );
-require( 'woocommerce/config/shop-single.php' );
+require_once( 'woocommerce/config/shop-header.php' );
+require_once( 'woocommerce/config/shop-archive.php' );
+require_once( 'woocommerce/config/shop-single.php' );
+require_once( 'woocommerce/config/shop-footer.php' );

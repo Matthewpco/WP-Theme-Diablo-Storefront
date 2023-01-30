@@ -209,9 +209,9 @@
 
         <div class="one-half-section">
             <picture>
-                <source media="(min-width:768px)" srcset="http://garyp38.sg-host.com/wp-content/uploads/2023/01/PvP03-Medium-416x178.webp">
-                <source media="(min-width:320px)" srcset="http://garyp38.sg-host.com/wp-content/uploads/2023/01/PvP03-Medium-300x129.webp">
-                <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/PvP03-Medium-416x178.webp" alt="PVP" style="width:auto;">
+                <source media="(min-width:768px)" srcset="/wp-content/uploads/2023/01/PvP03-Medium-416x178.webp">
+                <source media="(min-width:320px)" srcset="/wp-content/uploads/2023/01/PvP03-Medium-300x129.webp">
+                <img src="/wp-content/uploads/2023/01/PvP03-Medium-416x178.webp" alt="PVP" style="width:auto;">
             </picture>
             <h3 class="color-tan">PVP</h3>
             <p class="color-gray">Battles take a turn when you enter PvP zones. Mark yourself as “hostile” and these high-risk, high-reward areas of Sanctuary allow you to take a swing at other players for their valuable loot. But be warned. This also opens you up to being swung at.

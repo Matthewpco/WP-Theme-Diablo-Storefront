@@ -12,7 +12,7 @@
  */
 
 get_header(); ?>
-<!-- shop section begin -->
+<!-- page template begin -->
 <div class="content-area">
 
 
