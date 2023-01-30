@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The Initial configuration for the woocommerce header-shop template
+ * The Initial configuration for the woocommerce single-shop template
  * @see         https://docs.woocommerce.com/document/template-structure/
  * @package     WooCommerce\Templates
  * @version     1.6.4
@@ -11,57 +11,75 @@ if (!defined('ABSPATH')) {
 	exit; // Exit if accessed directly
 }
 
-add_action('init', 'd4s_storefront_single_hook' );
-function d4s_storefront_single_hook(){
+add_action('init', 'd4s_customize_storefront_single' );
 
-    add_action('woocommerce_before_main_content', 'd4s_storefront_single_content', 50);
+function d4s_customize_storefront_single(){
 	remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+	add_action('woocommerce_before_single_product_summary', 'd4s_before_single' );
+	add_action('woocommerce_after_single_product_summary', 'd4s_after_single' );
+	add_action('woocommerce_before_main_content', 'd4s_storefront_single_content', 50);
 }
+
+// add our custom wrapper to be able to modify content and styles without altering woocommerce or storefront base content 
+function d4s_before_single() {
+	echo '
+	<!-- Begin shop single section -->
+	<div id="shop-single-content">
+	';
+}
+
+function d4s_after_single() {
+	echo '
+	</div><!-- End shop single section -->
+	';
+}
+
+// custom single content and styling
 function d4s_storefront_single_content(){
     echo '
 	<style>
-		.gear-single-product {
+		#shop-single-content {
 			margin: 5%;
 		}
-		.gear-single-product .entry-summary h1 {
+		#shop-single-content .entry-summary h1 {
 			font-family: Poppins;
 			font-size: 1.5rem;
 			font-weight: 500;
 		}
-		.gear-single-product .entry-summary {
+		#shop-single-content .entry-summary {
 			border-bottom: 1px solid lightgray;
 		}
-		.gear-single-product .price {
+		#shop-single-content .price {
 			font-family: Poppins;
 			font-size: 1.5rem;
 			font-weight: 500;
 			color: #000;
 		}
-		.gear-single-product .entry-summary ul li {
+		#shop-single-content .entry-summary ul li {
 			font-family: Poppins;
 			font-size: 1.2rem;
 			font-weight: normal;
 			
 		}
-		.gear-single-product .cart .quantity input {
+		#shop-single-content .cart .quantity input {
 			display: none;
 		}
-		.gear-single-product .cart button {
+		#shop-single-content .cart button {
 			border-radius: 8px;
 			font-size: 1.3rem;
 			padding: .8rem 2.4rem;
 			font-family: Poppins;
 			font-weight: 400;
 		}
-		.gear-single-product ul {
+		#shop-single-content ul {
 			font-family: Poppins;
 			list-style: disc;
 			margin-left: 3%;
 		}
-		.gear-single-product #tab-title-reviews, .gear-single-product #tab-title-additional_information {
+		#shop-single-content #tab-title-reviews, .gear-single-product #tab-title-additional_information {
 			display: none;
 		}
-		.gear-single-product .woocommerce-tabs {
+		#shop-single-content .woocommerce-tabs {
 			display: flex;
 			flex-direction: column;
 			padding-left: 43%;
@@ -70,17 +88,28 @@ function d4s_storefront_single_content(){
 			font-size: 1.2rem;
 			color: #000;
 		}
-		#tab-title-description, .wc-tabs {
+		#shop-single-content #tab-title-description, .wc-tabs {
 			display: none;
 		}
-		.gear-single-product .woocommerce-product-gallery {
+		#shop-single-content .woocommerce-product-gallery {
 			margin-bottom: 0!important;
 		}
-		.gear-single-product .woocommerce-Tabs-panel {
+		#shop-single-content .woocommerce-Tabs-panel {
 			width: 90%!important;
 		}
+		#shop-single-content .woocommerce-loop-product__title {
+			text-align: center!important;
+		}
+		#page section > h2 {
+			text-align: left;
+			border-bottom: 2px solid black;
+			text-transform: uppercase;
+		}
+		.related.products {
+			margin: 5%;
+		}
 		@media only screen and (max-width: 767px) {
-			.gear-single-product .woocommerce-tabs {
+			#shop-single-content .woocommerce-tabs {
 				padding-left: 5%;
 			}
 		}

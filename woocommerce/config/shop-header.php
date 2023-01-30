@@ -11,62 +11,74 @@ if (!defined('ABSPATH')) {
 	exit; // Exit if accessed directly
 }
 
+add_action('init', 'd4s_customize_storefront_header' );
 
-add_action('init', 'replace_storefront_primary_navigation' );
-function replace_storefront_primary_navigation(){
+function d4s_customize_storefront_header(){
     remove_action( 'storefront_header', 'storefront_primary_navigation', 50 );
 	remove_action( 'storefront_before_content', 'woocommerce_breadcrumb', 10 );
-    add_action('storefront_header', 'jk_storefront_header_content', 50);
+	add_action('storefront_before_header', 'd4s_before_header' );
+	add_action('storefront_before_content', 'd4s_after_header' );
+    add_action('storefront_header', 'd4s_storefront_header_content', 50);
 }
 
-function jk_storefront_header_content(){
-    // your custom navigation code goes here
-    echo '
-	<style>
-		.site-search {
-			margin-top: 2%;
-		}
-		#woocommerce-product-search-field-0 {
-			background-color: #282b30;
-		}
-		.site-header-cart {
-			padding-top: 2%;
-		}
-		.site-header-cart .cart-contents {
-			padding: 0;
-			color: white;
-		}
-		.shop-nav ul a {
-			color: white;
-			background-color: #232323;
-		}
-		.shop-nav ul {
-			display: inline-flex;
-			font-family: "Poppins";
-			font-size: 1.2rem;
-			
-			
-		}
-		.shop-nav ul li {
-			padding: 12px 16px;
-			
-		}
-		.shop-nav ul li:hover {
-			background-color: white;
-			color: black;
-		}
-		.storefront-primary-navigation {
-			background-color: #232323;
-		}
-		.storefront-primary-navigation .col-full {
+// add our custom wrapper to be able to modify content and styles without altering woocommerce or storefront base content 
+function d4s_before_header() {
+	echo '
+	<div id="shop-header-content">
+	';
+}
 
-		}
-		.site-header {
-			background-color: #000;
-			padding-top: 1%;
-			border-bottom: none;
-		}
-	</style>
+function d4s_after_header() {
+	echo '
+	</div>
+	';
+}
+
+// custom header content and styling
+function d4s_storefront_header_content(){
+    echo '
+		<style>
+			#shop-header-content .site-search {
+				margin-top: 2%;
+			}
+			#shop-header-content #woocommerce-product-search-field-0 {
+				background-color: #282b30;
+			}
+			#shop-header-content .site-header-cart {
+				padding-top: 2%;
+			}
+			#shop-header-content .site-header-cart .cart-contents {
+				padding: 0;
+				color: white;
+			}
+			#shop-header-content .shop-nav ul a {
+				color: white;
+				background-color: #232323;
+			}
+			#shop-header-content .shop-nav ul {
+				display: inline-flex;
+				font-family: "Poppins";
+				font-size: 1.2rem;	
+			}
+			#shop-header-content .shop-nav ul li {
+				padding: 12px 16px;
+
+			}
+			#shop-header-content .shop-nav ul li:hover {
+				background-color: white;
+				color: black;
+			}
+			#shop-header-content .storefront-primary-navigation {
+				background-color: #232323;
+			}
+			#shop-header-content .storefront-primary-navigation .col-full {
+			}
+			#shop-header-content .site-header {
+				background-color: #000;
+				padding-top: 1%;
+				border-bottom: none;
+			}
+		</style>
 		<nav class="shop-nav" style="background-color: #c3c3c3; display: inline-flex">
 			<ul>
 				<a href="/#overview"><li>Overview</li></a>

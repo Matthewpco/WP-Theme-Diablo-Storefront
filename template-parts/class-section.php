@@ -6,7 +6,7 @@
 
 ?>
 <!-- Begin Class Section -->
-<div class="classes-content">
+<div id="classes" class="classes-content">
     <div class="classes-header">
         <h2 class="color-brown">Classes</h2>
         <h3 class="color-tan">HEROES OF SANCTUARY</h3>

@@ -10,6 +10,12 @@
  */
 
 ?>
+<?php
+//Custom hooks for content associated with this header
+add_action('wp_enqueue_scripts', 'd4s_enqueue_scripts');
+add_filter('script_loader_tag', 'd4s_defer_scripts', 10, 3);
+add_filter('script_loader_tag', 'd4s_export_scripts', 10, 3);
+?>
 <!doctype html>
 <!-- Begin header section -->
 <html <?php language_attributes(); ?> <head>

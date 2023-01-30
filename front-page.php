@@ -19,6 +19,8 @@ get_header();
 
 // Output the overview section
 get_template_part('template-parts/overview-section');
+// Output the overview sub section
+get_template_part('template-parts/overview-sub-section');
 // Output the class section
 get_template_part('template-parts/class-section');
 // Output the world section
