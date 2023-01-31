@@ -2,6 +2,11 @@
 
 /**
  * Displays the pre-purchase modal
+ * 
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * @package Storefront
+ * @subpackage Diablo_4_Storefront_Child
+ * @since Diablo 4 Storefront Child 1.0
  */
 
 ?>
@@ -15,7 +20,7 @@
         </div>
 
         <div class="purchase-modal-body">
-            <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/d4-logo-002.webp" />
+            <img src="/wp-content/uploads/2023/01/d4-logo-002.webp" />
             <h3>Pre-order Diablo® IV and receive Early Access to the Open Beta* and Light Bearer Mount in Diablo® IV.</h3>
 
             <div class="full-section">
@@ -46,7 +51,7 @@
             <div class="full-section">
 
                 <div class="one-third-section">
-                    <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/d4-base-edition.webp" width="350px" />
+                    <img src="/wp-content/uploads/2023/01/d4-base-edition.webp" width="350px" />
                     <h4>Standard Edition:</h4>
                     <div class="purchase-modal-description">
                         <ul>
@@ -64,7 +69,7 @@
                 </div>
 
                 <div class="one-third-section">
-                    <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/d4-deluxe-edition.webp" width="350px" />
+                    <img src="/wp-content/uploads/2023/01/d4-deluxe-edition.webp" width="350px" />
                     <h4>Digital Deluxe Edition:</h4>
                     <div class="purchase-modal-description">
                         <ul>
@@ -94,7 +99,7 @@
                 </div>
 
                 <div class="one-third-section">
-                    <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/d4-ultimate-edition.webp" width="350px" />
+                    <img src="/wp-content/uploads/2023/01/d4-ultimate-edition.webp" width="350px" />
                     <h4>Ultimate Edition:</h4>
                     <div class="purchase-modal-description">
                         <ul>

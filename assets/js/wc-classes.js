@@ -1,5 +1,6 @@
 import { LitElement, html, css } from "/wp-content/themes/diablo-4-storefront-child/assets/js/lit-core.min.js";
-
+// Web Component built using Lit for maximum compatibility.
+// Class tree with functional dropdown content and switched images on click
 export class d4sClasses extends LitElement {
   static properties = {
     name: {},

@@ -12,12 +12,12 @@
     <div class="modal-content">
         <div class="modal-header">
             <span class="close">&times;</span>
-            <a href="https://blizzard.com/"><img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/61fae8ba95e6ca00047b4f2b-e1673655719865.png"></a>
+            <a href="https://blizzard.com/"><img src="/wp-content/uploads/2023/01/61fae8ba95e6ca00047b4f2b-e1673655719865.png"></a>
         </div>
         <div class="modal-body">
             <nav>
                 <ul id="menu-main-menu" class="menu">
-                    <a href="#"><img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/d4-logo-002.webp" width="100%"></a>
+                    <a href="#"><img src="/wp-content/uploads/2023/01/d4-logo-002.webp" width="100%"></a>
                     <li id="menu-item-63" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-63"><a href="#overview">Overview</a></li>
                     <li id="menu-item-76" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76"><a href="#classes">Classes</a></li>
                     <li id="menu-item-77" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-77"><a href="#world">World</a></li>

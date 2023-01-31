@@ -26,6 +26,7 @@ function closeTrailer() {
     document.querySelector("#story-trailer").style.display = "none";
 }
 
+// Uses event target info in a switch case to figure out which area was clicked, display it, and hide the rest
 function revealContent(e) {
     let parentName = event.target.innerHTML;
     switch (parentName) {

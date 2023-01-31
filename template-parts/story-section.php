@@ -21,7 +21,7 @@
 
     <div class="story-body video-container">
         <video autoplay muted loop id="myVideo" width="100%">
-            <source src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/fenris-story-bg-loop-ultra.webm" type="video/webm">
+            <source src="/wp-content/uploads/2023/01/fenris-story-bg-loop-ultra.webm" type="video/webm">
         </video>
 
         <div class="caption">
@@ -43,23 +43,23 @@
         <div class="two-thirds-section">
 
             <div id="story-img-1">
-                <img src="https://garyp38.sg-host.com/wp-content/uploads/2023/01/Story01-Large.webp" alt="Story-1" width="854" height="480">
+                <img src="/wp-content/uploads/2023/01/Story01-Large.webp" alt="Story-1" width="854" height="480">
             </div>
 
             <div id="story-img-2" class="hidden">
-                <img src="https://garyp38.sg-host.com/wp-content/uploads/2023/01/Story02-Large.webp" alt="Story-2" width="854" height="480">
+                <img src="/wp-content/uploads/2023/01/Story02-Large.webp" alt="Story-2" width="854" height="480">
             </div>
 
             <div id="story-img-3" class="hidden">
-                <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/Story03-Medium.webp" alt="Story-3" width="854" height="480">
+                <img src="/wp-content/uploads/2023/01/Story03-Medium.webp" alt="Story-3" width="854" height="480">
             </div>
 
             <div id="story-img-4" class="hidden">
-                <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/Story04-Medium.webp" alt="Story-4" width="854" height="480">
+                <img src="/wp-content/uploads/2023/01/Story04-Medium.webp" alt="Story-4" width="854" height="480">
             </div>
 
             <div id="story-img-5" class="hidden">
-                <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/Story05-Medium.webp" alt="Story-5" width="854" height="480">
+                <img src="/wp-content/uploads/2023/01/Story05-Medium.webp" alt="Story-5" width="854" height="480">
             </div>
 
         </div>

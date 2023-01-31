@@ -23,17 +23,17 @@ function sf_child_theme_dequeue_style()
 /**
  * Note: DO NOT! alter or remove the code above this text and only add your custom PHP functions below this text.
  */
-//Enqueue fonts and icons for site
 
+//Enqueue fonts and icons for the whole site
 add_action( 'wp_enqueue_scripts', 'd4s_enqueue_fonts' );
+
 function d4s_enqueue_fonts() {
 	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap', false);
     wp_enqueue_style('fa',  'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
 }
 
-/**
- * Enqueue a script , add actions are in header, functions are here.
- */
+
+// Enqueue scripts , add actions are in header to seperate for landing page and shop, functions are here.
 
 function d4s_enqueue_scripts()
 {
@@ -52,14 +52,16 @@ function d4s_defer_scripts($tag, $handle, $src)
         'purchase-modal',
         'world-section',
         'story-section',
-
     );
+	
     if (in_array($handle, $defer)) {
         return '<script src="' . $src . '" defer="defer" type="text/javascript"></script>' . "\n";
     }
+	
     return $tag;
 }
 
+// Setup web component to module for Lit to run properly
 function d4s_export_scripts($tag, $handle, $src)
 {
     $export = array(
@@ -71,7 +73,7 @@ function d4s_export_scripts($tag, $handle, $src)
     return $tag;
 }
 
-
+// Dequeue parent scripts that are not needed for landing page
 function dequeue_parent_scripts()
 {
     wp_dequeue_style('storefront-woocommerce-style');
@@ -94,6 +96,7 @@ function dequeue_parent_scripts()
     wp_dequeue_script('woocommerce');
 }
 
+// Console log function in PHP to improve debugging experience
 function console_log(...$data)
 {
     $json = json_encode($data);
@@ -101,6 +104,9 @@ function console_log(...$data)
         echo "<script>console.log({$json})</script>";
     });
 }
+
+// Declare woocommerce support and setup and basic settings recommend as best practices
+add_action('after_setup_theme', 'd4s_theme_config', 0);
 
 function d4s_theme_config()
 {
@@ -126,8 +132,7 @@ function d4s_theme_config()
     }
 }
 
-add_action('after_setup_theme', 'd4s_theme_config', 0);
-//Setup custom D4S woocommerce configurations
+// Setup custom D4S woocommerce configuration by using standard hooks and actions to ensure compatibility with Woocommerce
 require_once( 'woocommerce/config/shop-header.php' );
 require_once( 'woocommerce/config/shop-archive.php' );
 require_once( 'woocommerce/config/shop-single.php' );
