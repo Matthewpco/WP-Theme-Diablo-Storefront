@@ -2,6 +2,11 @@
 
 /**
  * Displays the world section
+ * 
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * @package Storefront
+ * @subpackage Diablo_4_Storefront_Child
+ * @since Diablo 4 Storefront Child 1.0
  */
 
 ?>
@@ -19,46 +24,46 @@
 
             <div class="row">
                 <div class="column">
-                    <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/World01-Scosglen-Small.webp" style="width:100%" onclick="openWorldModal();currentSlide(1)" class="hover-shadow cursor">
+                    <img src="/wp-content/uploads/2023/01/World01-Scosglen-Small.webp" style="width:100%" onclick="openWorldModal();currentSlide(1)" class="hover-shadow cursor">
                 </div>
                 <div class="column">
-                    <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/World02-Scosglen.webp" style="width:100%" onclick=" openWorldModal();currentSlide(2)" class="hover-shadow cursor">
+                    <img src="/wp-content/uploads/2023/01/World02-Scosglen.webp" style="width:100%" onclick=" openWorldModal();currentSlide(2)" class="hover-shadow cursor">
                 </div>
                 <div class="column">
-                    <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/World03-Scosglen-Small.webp" style="width:100%" onclick="openWorldModal();currentSlide(3)" class="hover-shadow cursor">
+                    <img src="/wp-content/uploads/2023/01/World03-Scosglen-Small.webp" style="width:100%" onclick="openWorldModal();currentSlide(3)" class="hover-shadow cursor">
                 </div>
                 <div class="column">
-                    <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/World04-Scosglen-Medium.webp" style="width:100%" onclick="openWorldModal();currentSlide(4)" class="hover-shadow cursor">
+                    <img src="/wp-content/uploads/2023/01/World04-Scosglen-Medium.webp" style="width:100%" onclick="openWorldModal();currentSlide(4)" class="hover-shadow cursor">
                 </div>
             </div>
 
             <div class="row">
                 <div class="column">
-                    <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/World05-Scosglen-Small.webp" style="width:100%" onclick="openWorldModal();currentSlide(5)" class="hover-shadow cursor">
+                    <img src="/wp-content/uploads/2023/01/World05-Scosglen-Small.webp" style="width:100%" onclick="openWorldModal();currentSlide(5)" class="hover-shadow cursor">
                 </div>
                 <div class="column">
-                    <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/World06-Fractured_Peaks-Small.webp" style="width:100%" onclick="openWorldModal();currentSlide(6)" class="hover-shadow cursor">
+                    <img src="/wp-content/uploads/2023/01/World06-Fractured_Peaks-Small.webp" style="width:100%" onclick="openWorldModal();currentSlide(6)" class="hover-shadow cursor">
                 </div>
                 <div class="column">
-                    <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/World07-Dry_Steppes-Small.webp" style="width:100%" onclick="openWorldModal();currentSlide(7)" class="hover-shadow cursor">
+                    <img src="/wp-content/uploads/2023/01/World07-Dry_Steppes-Small.webp" style="width:100%" onclick="openWorldModal();currentSlide(7)" class="hover-shadow cursor">
                 </div>
                 <div class="column">
-                    <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/World08-Dry_Steppes-Small.webp" style="width:100%" onclick="openWorldModal();currentSlide(8)" class="hover-shadow cursor">
+                    <img src="/wp-content/uploads/2023/01/World08-Dry_Steppes-Small.webp" style="width:100%" onclick="openWorldModal();currentSlide(8)" class="hover-shadow cursor">
                 </div>
             </div>
 
             <div class="hidden" id="view-more-div">
                 <div class="column">
-                    <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/World09-Hawezar-Small.webp" style="width:100%" onclick="openWorldModal();currentSlide(9)" class="hover-shadow cursor">
+                    <img src="/wp-content/uploads/2023/01/World09-Hawezar-Small.webp" style="width:100%" onclick="openWorldModal();currentSlide(9)" class="hover-shadow cursor">
                 </div>
                 <div class="column">
-                    <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/World010-Hawezar-Large.webp" style="width:100%" onclick="openWorldModal();currentSlide(10)" class="hover-shadow cursor">
+                    <img src="/wp-content/uploads/2023/01/World010-Hawezar-Large.webp" style="width:100%" onclick="openWorldModal();currentSlide(10)" class="hover-shadow cursor">
                 </div>
                 <div class="column">
-                    <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/World011-Hawezar-Large.webp" style="width:100%" onclick="openWorldModal();currentSlide(11)" class="hover-shadow cursor">
+                    <img src="/wp-content/uploads/2023/01/World011-Hawezar-Large.webp" style="width:100%" onclick="openWorldModal();currentSlide(11)" class="hover-shadow cursor">
                 </div>
                 <div class="column">
-                    <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/World12-Kehjistan-Large.webp" style="width:100%" onclick="openWorldModal();currentSlide(12)" class="hover-shadow cursor">
+                    <img src="/wp-content/uploads/2023/01/World12-Kehjistan-Large.webp" style="width:100%" onclick="openWorldModal();currentSlide(12)" class="hover-shadow cursor">
                 </div>
             </div>
 
@@ -75,7 +80,7 @@
                 <div class="worldSlides">
                     <div class="numbertext">1 / 12</div>
                     <video width="100%" height="" controls>
-                        <source src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/Scosglen-01-540p.webm" type="video/webm">
+                        <source src="/wp-content/uploads/2023/01/Scosglen-01-540p.webm" type="video/webm">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -83,7 +88,7 @@
                 <div class="worldSlides">
                     <div class="numbertext">2 / 12</div>
                     <video width="100%" height="" controls>
-                        <source src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/Scosglen-02-540p.webm" type="video/webm">
+                        <source src="/wp-content/uploads/2023/01/Scosglen-02-540p.webm" type="video/webm">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -91,7 +96,7 @@
                 <div class="worldSlides">
                     <div class="numbertext">3 / 12</div>
                     <video width="100%" height="" controls>
-                        <source src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/Scosglen-03-540p.webm" type="video/webm">
+                        <source src="/wp-content/uploads/2023/01/Scosglen-03-540p.webm" type="video/webm">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -99,49 +104,49 @@
                 <div class="worldSlides">
                     <div class="numbertext">4 / 12</div>
                     <video width="100%" height="" controls>
-                        <source src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/Scosglen-04-540p.webm" type="video/webm">
+                        <source src="/wp-content/uploads/2023/01/Scosglen-04-540p.webm" type="video/webm">
                         Your browser does not support the video tag.
                     </video>
                 </div>
 
                 <div class="worldSlides">
                     <div class="numbertext">5 / 12</div>
-                    <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/World05-Scosglen-Small.webp" style="width:100%">
+                    <img src="/wp-content/uploads/2023/01/World05-Scosglen-Small.webp" style="width:100%">
                 </div>
 
                 <div class="worldSlides">
                     <div class="numbertext">6 / 12</div>
-                    <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/World06-Fractured_Peaks-Small.webp" style="width:100%">
+                    <img src="/wp-content/uploads/2023/01/World06-Fractured_Peaks-Small.webp" style="width:100%">
                 </div>
 
                 <div class="worldSlides">
                     <div class="numbertext">7 / 12</div>
-                    <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/World07-Dry_Steppes-Small.webp" style="width:100%">
+                    <img src="/wp-content/uploads/2023/01/World07-Dry_Steppes-Small.webp" style="width:100%">
                 </div>
 
                 <div class="worldSlides">
                     <div class="numbertext">8 / 12</div>
-                    <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/World08-Dry_Steppes-Small.webp" style="width:100%">
+                    <img src="/wp-content/uploads/2023/01/World08-Dry_Steppes-Small.webp" style="width:100%">
                 </div>
 
                 <div class="worldSlides">
                     <div class="numbertext">9 / 12</div>
-                    <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/World09-Hawezar-Small.webp" style="width:100%">
+                    <img src="/wp-content/uploads/2023/01/World09-Hawezar-Small.webp" style="width:100%">
                 </div>
 
                 <div class="worldSlides">
                     <div class="numbertext">10 / 12</div>
-                    <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/World010-Hawezar-Large.webp" style="width:100%">
+                    <img src="/wp-content/uploads/2023/01/World010-Hawezar-Large.webp" style="width:100%">
                 </div>
 
                 <div class="worldSlides">
                     <div class="numbertext">11 / 12</div>
-                    <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/World011-Hawezar-Large.webp" style="width:100%">
+                    <img src="/wp-content/uploads/2023/01/World011-Hawezar-Large.webp" style="width:100%">
                 </div>
 
                 <div class="worldSlides">
                     <div class="numbertext">12 / 12</div>
-                    <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/World12-Kehjistan-Large.webp" style="width:100%">
+                    <img src="/wp-content/uploads/2023/01/World12-Kehjistan-Large.webp" style="width:100%">
                 </div>
 
                 <a class="prev color-brown" onclick="plusSlides(-1)">&#10094;</a>

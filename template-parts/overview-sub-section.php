@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Displays the news section
+ * Displays the overview sub-section
  * 
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  * @package Storefront
@@ -21,5 +21,5 @@
         <h3 class="color-tan size-xl old-fenris center">ABANDON ALL HOPE</h3>
         <p class="color-gray size-text alegreya-sans center">The endless battle between the High Heavens and the Burning Hells rages on as chaos threatens to consume Sanctuary. With ceaseless demons to slaughter, countless Abilities to master, nightmarish Dungeons, and Legendary loot, this vast, open world brings the promise of adventure and devastation. Survive and conquer darkness – or succumb to the shadows.</p>
     </div>
-
+	
 </div><!-- End Overview sub-section template -->

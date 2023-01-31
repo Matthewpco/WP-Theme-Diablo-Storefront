@@ -23,7 +23,7 @@
         <div class="full-section row">
 
             <div class="one-third-section column center">
-                <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/d4-base-edition.webp" width="350px" />
+                <img src="/wp-content/uploads/2023/01/d4-base-edition.webp" width="350px" />
                 <h4 class="color-tan old-fenris size-med">Standard Edition:</h4>
                 <div class="purchase-modal-description color-gray">
                     <ul>
@@ -41,7 +41,7 @@
             </div>
 
             <div class="one-third-section column center">
-                <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/d4-deluxe-edition.webp" width="350px" />
+                <img src="/wp-content/uploads/2023/01/d4-deluxe-edition.webp" width="350px" />
                 <h4 class="color-tan old-fenris size-med">Digital Deluxe Edition:</h4>
                 <div class="purchase-modal-description color-gray">
                     <ul>
@@ -71,7 +71,7 @@
             </div>
 
             <div class="one-third-section column center">
-                <img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/d4-ultimate-edition.webp" width="350px" />
+                <img src="/wp-content/uploads/2023/01/d4-ultimate-edition.webp" width="350px" />
                 <h4 class="color-tan old-fenris size-med">Ultimate Edition:</h4>
                 <div class="purchase-modal-description color-gray">
                     <ul>

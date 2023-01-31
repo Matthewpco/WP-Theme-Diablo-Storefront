@@ -68,6 +68,23 @@ function d4s_storefront_footer_content(){
 		#footer-logo {
 			height: 60px;
 		}
+		@media only screen and (max-width: 767px) {
+			#shop-footer-content .col-full {
+				flex-direction: column;
+				text-align: center;
+				margin: 1%;
+			}
+			#shop-footer-content .one-sixth-section {
+				width: 100%;
+			}
+			#shop-footer-content .row {
+				justify-content: center;
+				padding: 2% 0;
+			}
+			#shop-footer-content .storefront-handheld-footer-bar {
+				display: none;
+			}
+		}
 	</style>
 	
 		<div class="one-sixth-section row">

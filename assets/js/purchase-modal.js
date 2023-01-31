@@ -1,3 +1,4 @@
+// Pre-purchase modal to be displayed on click of any pre-purchase button
 // Get the pre-purchase modal
 var purchaseModal = document.getElementById("purchase-modal");
 
@@ -31,4 +32,3 @@ purchaseBtn[3].onclick = function() {
 purchaseSpan.onclick = function() {
     purchaseModal.style.display = "none";
 }
-

@@ -2,6 +2,10 @@
 
 /**
  * Displays the class section
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * @package Storefront
+ * @subpackage Diablo_4_Storefront_Child
+ * @since Diablo 4 Storefront Child 1.0
  */
 
 ?>

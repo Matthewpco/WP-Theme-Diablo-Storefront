@@ -78,15 +78,33 @@ function d4s_storefront_header_content(){
 				padding-top: 1%;
 				border-bottom: none;
 			}
+			@media only screen and (max-width: 767px) {
+				#shop-header-content .site-header {
+					display: flex;
+					flex-direction: column;
+				}
+				#shop-header-content .site-branding {
+					margin-left: 25%;
+					padding: 2% 0;
+				}
+				#shop-header-content .shop-nav {
+					width: 100%;
+					justify-content: center;
+					text-align: center;
+				}
+				#shop-header-content .shop-nav ul {
+					flex-direction: column;
+				}
+			}
 		</style>
-		<nav class="shop-nav" style="background-color: #c3c3c3; display: inline-flex">
+		<nav class="shop-nav" style="background-color: #232323; display: inline-flex">
 			<ul>
 				<a href="/#overview"><li>Overview</li></a>
 				<a href="/#classes"><li>Classes</li></a>
 				<a href="/#world"><li>World</li></a>
 				<a href="/#story"><li>Story</li></a>
 				<a href="/#news"><li>News</li></a>
-				<a href="/#shop"><li>Gear</li></a>
+				<a href="/shop"><li>Gear</li></a>
 			</ul>
 		</nav>
 	';

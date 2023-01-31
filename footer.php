@@ -27,7 +27,7 @@
 
 		<!-- Footer logo -->
 		<div class="footer-logo">
-			<a href="https://blizzard.com/" target="_blank"><img src="http://garyp38.sg-host.com/wp-content/uploads/2023/01/61fae8ba95e6ca00047b4f2b-e1673655719865.png" alt="logo"></a>
+			<a href="https://blizzard.com/" target="_blank"><img src="/wp-content/uploads/2023/01/61fae8ba95e6ca00047b4f2b-e1673655719865.png" alt="logo"></a>
 		</div>
 
 		<div class="d4s-top-nav">
@@ -44,7 +44,7 @@
 		</div>
 
 		<div class="d4s-all-games">
-			<p>All games, one app: <a href="https://www.blizzard.com/apps/battle.net/desktop"><img src="http://diablo41.local/wp-content/uploads/2023/01/ezgif.com-gif-maker.webp"> Battle.net Desktop App</a>
+			<p>All games, one app: <a href="https://www.blizzard.com/apps/battle.net/desktop"><img src="/wp-content/uploads/2023/01/ezgif.com-gif-maker.webp"> Battle.net Desktop App</a>
 			</p>
 		</div>
 
@@ -64,7 +64,7 @@
 		<div class="d4s-footer-legal">
 			<div class="legal-container">
 				<img id="esrb-policy" src="/wp-content/uploads/2023/01/esrb.webp" alt="esrb-policy">
-				<img id="esrb-mature" src="http://diablo41.local/wp-content/uploads/2023/01/m.1BK7T.webp" alt="ESRB-mature">
+				<img id="esrb-mature" src="/wp-content/uploads/2023/01/m.1BK7T.webp" alt="ESRB-mature">
 				<ul>
 					<li>Blood and Gore</li>
 					<li>Intense Violence</li>

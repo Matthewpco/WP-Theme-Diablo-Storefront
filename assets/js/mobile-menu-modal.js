@@ -1,3 +1,5 @@
+// Mobile menu modal called in the header template on mobile size screens
+// Code opens the modal on click of hamburger menu and closes if x or outside the modal is clicked
 // Get the modal
 var modal = document.getElementById("mobile-modal");
 

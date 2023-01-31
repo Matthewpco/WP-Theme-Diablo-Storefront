@@ -12,24 +12,27 @@
  *
  * @package storefront
  */
+
+// Dequeue scripts and styles for storefront parent theme and woocommerce that are not needed for this page to improve Google core web vitals
 if (is_front_page()) {
 	add_action('wp_enqueue_scripts', 'dequeue_parent_scripts', 100);
 }
-get_header();
 
-// Output the overview section
+// Get the header section
+get_header();
+// Get the overview section
 get_template_part('template-parts/overview-section');
-// Output the overview sub section
+// Get the overview sub section
 get_template_part('template-parts/overview-sub-section');
-// Output the class section
+// Get the class section
 get_template_part('template-parts/class-section');
-// Output the world section
+// Get the world section
 get_template_part('template-parts/world-section');
-// output the story section
+// Get the story section
 get_template_part('template-parts/story-section');
-// output the news section
+// Get the news section
 get_template_part('template-parts/news-section');
-// output the cta section
+// Get the cta section
 get_template_part('template-parts/cta-section');
-// output the footer section
+// Get the footer section
 get_footer();
