@@ -1,28 +1,19 @@
-# Storefront Child Theme
+![](https://raw.githubusercontent.com/Matthewpco/WP-Editor-Dark-Theme/main/wp-editor-dark-theme-image.jpg)
 
-The StoreFront Child Theme is a starter blank child theme for WooThemes StoreFront WooCommerce theme.
+# This is a custom WordPress plugin to enable a dark mode for the theme editor and admin area.
 
-## Installation
+<br>
 
-1. Download the child theme from it's GitHub Repository [Download StoreFront Blank Child Theme](https://github.com/stuartduff/storefront-child-theme).
-2. Goto WordPress > Appearance > Themes > Add New.
-2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
-3. Click Activate to use your new theme right away.
+## 🙋‍♂️ Introduction
 
-## Usage
+- This plugin is made to enable a dark mode in the admin area to provide better ux for developers.
 
-This child theme is designed to be used as a starter theme for the WooCommerce StoreFront theme which you can download for free below.
+<br>
 
-* [Download WooCommerce StoreFront Theme](https://wordpress.org/themes/storefront/)
-* [StoreFront Documentation](http://docs.woocommerce.com/documentation/themes/storefront/)
-* [StoreFront Child Themes](https://woocommerce.com/product-category/themes/storefront-child-theme-themes/)
-* [StoreFront Extensions](https://woocommerce.com/product-category/storefront-extensions/)
+## 📜 Features
 
-Custom PHP that you write should be added to the child themes functions.php file whilst any custom CSS should be added to the child themes style.css file.
+- CSS
+- PHP
+- WordPress
 
-There is also a style.scss file within the /assets/sass/ folder that can be used if you wish to write [SASS - Syntactically Awesome Style Sheets](http://sass-lang.com/) based styles which can then be compiled into the style.css file using an app like [CodeKit](https://incident57.com/codekit/) for OSX or [PrePros](https://prepros.io/) for Windows.
-
-The blank child theme itself has no functionality and if you would like to learn more about child themes for WordPress see this documentation below.
-
-* [WordPress Child Themes](https://codex.wordpress.org/Child_Themes)
-
+  <br>
