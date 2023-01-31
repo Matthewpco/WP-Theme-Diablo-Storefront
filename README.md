@@ -24,8 +24,8 @@
   
   ![](https://github.com/Matthewpco/WP-Theme-Diablo-Storefront/blob/main/d4s-project-management.jpg)
   ![](https://github.com/Matthewpco/WP-Theme-Diablo-Storefront/blob/main/d4s-full-desktop.jpg)
-  ![](https://github.com/Matthewpco/WP-Theme-Diablo-Storefront/blob/main/d4s-full-mobile.jpg)
   ![](https://github.com/Matthewpco/WP-Theme-Diablo-Storefront/blob/main/d4s-archive-full-desktop.jpg)
-  ![](https://github.com/Matthewpco/WP-Theme-Diablo-Storefront/blob/main/d4s-archive-full-mobile.jpg)
   ![](https://github.com/Matthewpco/WP-Theme-Diablo-Storefront/blob/main/d4s-single-full-desktop.jpg)
+  ![](https://github.com/Matthewpco/WP-Theme-Diablo-Storefront/blob/main/d4s-full-mobile.jpg)
+  ![](https://github.com/Matthewpco/WP-Theme-Diablo-Storefront/blob/main/d4s-archive-full-mobile.jpg)
   ![](https://github.com/Matthewpco/WP-Theme-Diablo-Storefront/blob/main/d4s-single-full-mobile.jpg)
